@@ -13,8 +13,8 @@ class LoginPageLogo extends StatelessWidget {
       decoration: BoxDecoration(
         color: AppConstants.mainOrange,
         borderRadius: BorderRadius.only(
-          bottomLeft: Radius.circular(40.r),
-          bottomRight: Radius.circular(40.r),
+          bottomLeft: Radius.circular(200.r),
+          bottomRight: Radius.circular(200.r),
         ),
       ),
     );
