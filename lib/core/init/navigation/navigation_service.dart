@@ -1,4 +1,5 @@
 import 'package:solution_challenge_project/export.dart';
+import 'package:solution_challenge_project/views/login_and_register/register_page.dart';
 
 class NavigationService {
   static List<GetPage> routes = [
@@ -9,6 +10,10 @@ class NavigationService {
     GetPage(
       name: NavigationConstants.loginPage,
       page: () => const LoginPage(),
+    ),
+    GetPage(
+      name: NavigationConstants.registerPage,
+      page: () => const RegisterPage(),
     ),
   ];
 }
