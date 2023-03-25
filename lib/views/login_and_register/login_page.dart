@@ -10,19 +10,9 @@ class LoginPage extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Container(
-              width: 444.w,
-              height: 300.h,
-              decoration: BoxDecoration(
-                color: AppConstants.mainOrange,
-                borderRadius: BorderRadius.only(
-                  bottomLeft: Radius.circular(200.r),
-                  bottomRight: Radius.circular(200.r),
-                ),
-              ),
-            ),
+            const LoginPageLogo(),
             Padding(
-              padding: EdgeInsets.only(top: 15.h, left: 37.w),
+              padding: EdgeInsets.only(top: 50.h, left: 37.w),
               child: Text(
                 "Hello,",
                 style: TextStyle(
