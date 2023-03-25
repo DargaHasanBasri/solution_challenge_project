@@ -1,4 +1,6 @@
 import 'package:solution_challenge_project/export.dart';
+import 'package:solution_challenge_project/views/login_and_register/new_password_page.dart';
+import 'package:solution_challenge_project/views/login_and_register/password_reset_page.dart';
 import 'package:solution_challenge_project/views/login_and_register/register_page.dart';
 
 class NavigationService {
@@ -14,6 +16,14 @@ class NavigationService {
     GetPage(
       name: NavigationConstants.registerPage,
       page: () => const RegisterPage(),
+    ),
+    GetPage(
+      name: NavigationConstants.passwordReset,
+      page: () => const PasswordReset(),
+    ),
+    GetPage(
+      name: NavigationConstants.newPassword,
+      page: () => const NewPassword(),
     ),
   ];
 }

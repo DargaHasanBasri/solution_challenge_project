@@ -2,9 +2,11 @@ import 'package:solution_challenge_project/export.dart';
 
 class ActionButton extends StatelessWidget {
   final String buttonTitle;
+  final dynamic navigationName;
   const ActionButton({
     super.key,
     required this.buttonTitle,
+    this.navigationName,
   });
 
   @override
@@ -13,7 +15,9 @@ class ActionButton extends StatelessWidget {
       height: 58.h,
       width: 300.w,
       child: ElevatedButton(
-        onPressed: () {},
+        onPressed: () {
+          Get.toNamed(navigationName);
+        },
         style: ElevatedButton.styleFrom(
           backgroundColor: AppConstants.mainBlue,
           shape: RoundedRectangleBorder(
