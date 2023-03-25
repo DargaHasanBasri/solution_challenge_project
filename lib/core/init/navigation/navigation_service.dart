@@ -6,5 +6,9 @@ class NavigationService {
       name: NavigationConstants.home,
       page: () => const HomePage(),
     ),
+    GetPage(
+      name: NavigationConstants.loginPage,
+      page: () => const LoginPage(),
+    ),
   ];
 }
