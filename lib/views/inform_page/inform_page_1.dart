@@ -1,7 +1,7 @@
 import 'package:solution_challenge_project/export.dart';
 
-class HomePage extends StatelessWidget {
-  const HomePage({super.key});
+class InformPage extends StatelessWidget {
+  const InformPage({super.key});
 
   @override
   Widget build(BuildContext context) {

@@ -9,7 +9,11 @@ void main() async {
         debugShowCheckedModeBanner: false,
         title: AppConstants.appName,
         getPages: NavigationService.routes,
+<<<<<<< Updated upstream
         initialRoute: NavigationConstants.loginPage,
+=======
+        initialRoute: NavigationConstants.informPage,
+>>>>>>> Stashed changes
         // initialBinding: InitialBinding(), // Initial binding always run
         theme: AppTheme.instance.lightTheme,
       ),
