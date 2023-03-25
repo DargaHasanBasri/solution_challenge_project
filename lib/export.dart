@@ -16,3 +16,4 @@ export 'package:solution_challenge_project/views/login_and_register/companents/u
 export 'package:solution_challenge_project/views/login_and_register/companents/user_textformfield.dart';
 export 'package:solution_challenge_project/views/login_and_register/companents/action_button.dart';
 export 'package:solution_challenge_project/views/login_and_register/login_page.dart';
+export 'package:solution_challenge_project/views/login_and_register/companents/password_textformfield.dart';

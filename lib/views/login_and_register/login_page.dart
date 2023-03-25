@@ -62,7 +62,7 @@ class LoginPage extends StatelessWidget {
             ),
             Padding(
               padding: EdgeInsets.only(top: 10.h, left: 37.w),
-              child: const UserTextFormField(hintTextTitle: "Password"),
+              child: const PasswordTextFormField(hintTextTitle: "Password"),
             ),
             Padding(
               padding: EdgeInsets.only(top: 20.h, left: 37.w),
