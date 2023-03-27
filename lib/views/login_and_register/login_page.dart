@@ -1,4 +1,3 @@
-import 'package:flutter/gestures.dart';
 import 'package:solution_challenge_project/export.dart';
 
 class LoginPage extends StatelessWidget {
@@ -12,21 +11,10 @@ class LoginPage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const LoginPageLogo(),
-            Padding(
-              padding: EdgeInsets.only(top: 50.h, left: 37.w),
-              child: Text(
-                "Hello,",
-                style: TextStyle(
-                  fontSize: 28.sp,
-                  color: AppConstants.mainOrange,
-                  //fontFamily: FontConstants.robotoBold,
-                ),
-              ),
-            ),
             Row(
               children: [
                 Padding(
-                  padding: EdgeInsets.only(top: 20.h, left: 79.w),
+                  padding: EdgeInsets.only(top: 100.h, left: 79.w),
                   child: UserButton(
                     buttonTitle: "Kullanıcı",
                     buttonBorder: BorderRadius.only(
@@ -36,7 +24,7 @@ class LoginPage extends StatelessWidget {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsets.only(top: 20.h, left: 11.w),
+                  padding: EdgeInsets.only(top: 100.h, left: 11.w),
                   child: UserButton(
                     buttonTitle: "Kurum",
                     buttonBorder: BorderRadius.only(
@@ -78,7 +66,7 @@ class LoginPage extends StatelessWidget {
               padding: EdgeInsets.only(top: 10.h, left: 37.w),
               child: const ActionButton(
                 buttonTitle: "Login",
-                navigationName: NavigationConstants.registerPage,
+                navigationName: NavigationConstants.home,
               ),
             ),
             Row(
