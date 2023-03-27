@@ -98,16 +98,17 @@ class LoginPage extends StatelessWidget {
                   padding: EdgeInsets.only(top: 9.h, left: 3.w),
                   child: RichText(
                     text: TextSpan(
-                        text: "Hemen Kaydol",
-                        style: TextStyle(
-                          fontSize: 12.sp,
-                          decoration: TextDecoration.underline,
-                          color: AppConstants.mainOrange,
-                        ),
-                        recognizer: TapGestureRecognizer()
-                          ..onTap = () {
-                            Get.toNamed(NavigationConstants.registerPage);
-                          }),
+                      text: "Hemen Kaydol",
+                      style: TextStyle(
+                        fontSize: 12.sp,
+                        decoration: TextDecoration.underline,
+                        color: AppConstants.mainOrange,
+                      ),
+                      recognizer: TapGestureRecognizer()
+                        ..onTap = () {
+                          Get.toNamed(NavigationConstants.registerPage);
+                        },
+                    ),
                   ),
                 ),
               ],

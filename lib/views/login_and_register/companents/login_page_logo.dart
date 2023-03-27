@@ -8,7 +8,7 @@ class LoginPageLogo extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 444.w,
+      width: double.infinity,
       height: 250.h,
       decoration: BoxDecoration(
         color: AppConstants.mainOrange,
