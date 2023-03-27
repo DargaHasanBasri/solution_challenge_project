@@ -1,5 +1,4 @@
 import 'package:solution_challenge_project/export.dart';
-import 'package:solution_challenge_project/views/inform_page/inform_page_second.dart';
 
 class InformPageThird extends StatelessWidget {
   const InformPageThird({super.key});
@@ -7,111 +6,107 @@ class InformPageThird extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-  body: Center(
-    child: Column(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        Image.asset(
-          'assets/images/boy.png',
-          width: MediaQuery.of(context).size.width * 0.8,
-        ),
-        SizedBox(height: 32.h),
-        Text(
-          'Healthy Children, Healthy Future',
-          style: TextStyle(
-            fontSize: 24.sp,
-            fontWeight: FontWeight.bold,
-          ),
-        ),
-        SizedBox(height: 16.h),
-        Padding(
-          padding:  EdgeInsets.only(left: 25.w,right: 25.w),
-          child: Text(
-            'Every year, millions of children around the world die from preventable diseases due to insufficient vaccinations.',
-            textAlign: TextAlign.center,
-            style: TextStyle(
-              fontSize: 16.sp,
-              color: Colors.grey[600],
-            ),
-          ),
-        ),
-        SizedBox(height: 16.h),
-        Padding(
-          padding: const EdgeInsets.all(22.0),
-          child: Row(
+      body: Center(
+        child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Expanded(
-              child: GestureDetector(
-          onTap: () {
-           // Get.toNamed();
-          },
-          child: Container(
-            padding: EdgeInsets.symmetric(
-              vertical: 12.w,
+            Image.asset(
+              'assets/images/boy.png',
+              width: MediaQuery.of(context).size.width * 0.8,
             ),
-            decoration: BoxDecoration(
-              gradient: LinearGradient(
-                colors: [
-                  AppConstants.mainBlue,
-                  AppConstants.mainOrange,
-                ],
+            SizedBox(height: 32.h),
+            Text(
+              'Healthy Children, Healthy Future',
+              style: TextStyle(
+                fontSize: 24.sp,
+                fontWeight: FontWeight.bold,
               ),
-              borderRadius: BorderRadius.circular(24.r),
             ),
-            child: SizedBox(
-              width: double.infinity,
+            SizedBox(height: 16.h),
+            Padding(
+              padding: EdgeInsets.only(left: 25.w, right: 25.w),
               child: Text(
-                'Organization Login',
+                'Every year, millions of children around the world die from preventable diseases due to insufficient vaccinations.',
                 textAlign: TextAlign.center,
                 style: TextStyle(
-                  fontSize: 18.sp,
-                  color: AppConstants.mainWhite,
+                  fontSize: 16.sp,
+                  color: Colors.grey[600],
                 ),
               ),
             ),
-          ),
-              ),
-            ),
-            SizedBox(
-              width: 24.w,
-            ),
-            Expanded(
-              child: GestureDetector(
-          onTap: () {
-            //Get.to("regular");
-          },
-          child: Container(
-            padding: EdgeInsets.symmetric(
-              vertical: 12.w,
-            ),
-            decoration: BoxDecoration(
-              gradient: LinearGradient(
-                colors: [
-                  AppConstants.mainBlue,
-                  AppConstants.mainOrange,
+            SizedBox(height: 16.h),
+            Padding(
+              padding: const EdgeInsets.all(22.0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Expanded(
+                    child: GestureDetector(
+                      onTap: () {
+                        Get.toNamed(NavigationConstants.loginPage);
+                      },
+                      child: Container(
+                        padding: EdgeInsets.symmetric(
+                          vertical: 12.w,
+                        ),
+                        decoration: BoxDecoration(
+                          gradient: const LinearGradient(
+                            colors: AppConstants.buttonColor,
+                          ),
+                          borderRadius: BorderRadius.circular(24.r),
+                        ),
+                        child: SizedBox(
+                          width: double.infinity,
+                          child: Text(
+                            'Organization Login',
+                            textAlign: TextAlign.center,
+                            style: TextStyle(
+                              fontSize: 18.sp,
+                              color: AppConstants.mainWhite,
+                            ),
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
+                  SizedBox(
+                    width: 24.w,
+                  ),
+                  Expanded(
+                    child: GestureDetector(
+                      onTap: () {
+                        Get.toNamed(NavigationConstants.loginPage);
+                      },
+                      child: Container(
+                        padding: EdgeInsets.symmetric(
+                          vertical: 12.w,
+                        ),
+                        decoration: BoxDecoration(
+                          gradient: const LinearGradient(
+                            colors: AppConstants.buttonColor,
+                          ),
+                          borderRadius: BorderRadius.circular(24.r),
+                        ),
+                        child: SizedBox(
+                          width: double.infinity,
+                          child: Text(
+                            'Regular Login',
+                            textAlign: TextAlign.center,
+                            style: TextStyle(
+                              fontSize: 18.sp,
+                              color: AppConstants.mainWhite,
+                            ),
+                          ),
+                        ),
+                      ),
+                    ),
+                  ),
                 ],
               ),
-              borderRadius: BorderRadius.circular(24.r),
-            ),
-            child: SizedBox(
-              width: double.infinity,
-              child: Text(
-                'Regular Login',
-                textAlign: TextAlign.center,
-                style: TextStyle(
-                  fontSize: 18.sp,
-                  color: AppConstants.mainWhite,
-                ),
-              ),
-            ),
-          ),
-              ),
-            ),
+            )
           ],
         ),
-        )
-      ],
-    ),
-  ),
-);}}
+      ),
+    );
+  }
+}
