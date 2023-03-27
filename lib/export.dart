@@ -18,3 +18,5 @@ export 'package:solution_challenge_project/views/login_and_register/companents/a
 export 'package:solution_challenge_project/views/login_and_register/login_page.dart';
 export 'package:solution_challenge_project/views/login_and_register/companents/password_textformfield.dart';
 export 'package:solution_challenge_project/views/login_and_register/companents/login_page_logo.dart';
+export 'package:flutter_svg/flutter_svg.dart';
+export 'package:flutter/gestures.dart';
