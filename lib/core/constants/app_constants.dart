@@ -10,4 +10,9 @@ class AppConstants {
   static const Color mainBlue = Color(0xFF0DC7C0);
 
   static const Color fillColorText = Color(0xFFE8E8E8);
+
+  static const List<Color> buttonColor = [
+    Color(0xFF0DC7C0),
+    Color(0xFFFF8651),
+  ];
 }
