@@ -32,11 +32,10 @@ class NavigationService {
       page: () => const NewPassword(),
     ),
     GetPage(
-
       name: NavigationConstants.donatePage1,
       page: () => const DonatePage1(),
     ),
-
+    GetPage(
       name: NavigationConstants.informPage,
       page: () => const InformPage(),
     ),
