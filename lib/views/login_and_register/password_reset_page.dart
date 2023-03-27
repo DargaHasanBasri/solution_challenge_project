@@ -1,4 +1,3 @@
-import 'package:flutter/gestures.dart';
 import 'package:solution_challenge_project/export.dart';
 
 class PasswordReset extends StatelessWidget {
