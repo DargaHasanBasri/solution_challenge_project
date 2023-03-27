@@ -7,7 +7,12 @@ class NavigationConstants {
   static const registerPage = "/registerPage";
   static const passwordReset = "/passwordReset";
   static const newPassword = "/newPassword";
+
+
+  static const donatePage1 = "/donatePage1";
+
   static const informPage = "/informPage";
   static const informPageSecond = "/informPageSecond";
   static const informPageThird = "/informPageThird";
+
 }
