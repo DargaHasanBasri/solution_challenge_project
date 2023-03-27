@@ -1,4 +1,5 @@
 import 'package:solution_challenge_project/export.dart';
+import 'package:solution_challenge_project/views/campaigns_page/donate_page1.dart';
 import 'package:solution_challenge_project/views/login_and_register/new_password_page.dart';
 import 'package:solution_challenge_project/views/login_and_register/password_reset_page.dart';
 import 'package:solution_challenge_project/views/login_and_register/register_page.dart';
@@ -24,6 +25,10 @@ class NavigationService {
     GetPage(
       name: NavigationConstants.newPassword,
       page: () => const NewPassword(),
+    ),
+    GetPage(
+      name: NavigationConstants.donatePage1,
+      page: () => const DonatePage1(),
     ),
   ];
 }
