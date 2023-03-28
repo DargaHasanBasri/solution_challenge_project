@@ -55,14 +55,14 @@ class HomePage extends StatelessWidget {
                     const CampaignsInkwell(
                       imageAdress: "assets/images/resim1.png",
                       countryName: "Africa",
-                      navigationName: NavigationConstants.donatePage1,
+                      navigationName: NavigationConstants.campaignsDetails1,
                     ),
                     Padding(
                       padding: EdgeInsets.only(left: 15.w),
                       child: const CampaignsInkwell(
                         imageAdress: "assets/images/resim1.png",
                         countryName: "India",
-                        navigationName: NavigationConstants.donatePage1,
+                        navigationName: NavigationConstants.campaignsDetails1,
                       ),
                     ),
                     Padding(
@@ -70,7 +70,7 @@ class HomePage extends StatelessWidget {
                       child: const CampaignsInkwell(
                         imageAdress: "assets/images/resim1.png",
                         countryName: "Africa",
-                        navigationName: NavigationConstants.donatePage1,
+                        navigationName: NavigationConstants.campaignsDetails1,
                       ),
                     ),
                   ],

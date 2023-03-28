@@ -1,4 +1,6 @@
 import 'package:solution_challenge_project/export.dart';
+import 'package:solution_challenge_project/views/inform_page/compenents/image_and_title.dart';
+import 'package:solution_challenge_project/views/inform_page/compenents/inform_button.dart';
 
 class InformPage extends StatelessWidget {
   const InformPage({super.key});
@@ -11,17 +13,9 @@ class InformPage extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Image.asset(
-                'assets/images/helping-hand.png',
-                width: MediaQuery.of(context).size.width * 0.8,
-              ),
-              SizedBox(height: 10.h),
-              Text(
-                'Sufficient Resources Save Lives',
-                style: TextStyle(
-                  fontSize: 24.sp,
-                  fontWeight: FontWeight.bold,
-                ),
+              const ImageAndTitle(
+                imageAdress: 'assets/images/helping-hand.png',
+                imageTitle: 'Sufficient Resources Save Lives',
               ),
               SizedBox(height: 16.h),
               Padding(
@@ -36,29 +30,11 @@ class InformPage extends StatelessWidget {
                 ),
               ),
               SizedBox(height: 16.h),
-              GestureDetector(
-                onTap: () {
-                  Get.toNamed(NavigationConstants.informPageSecond);
-                },
-                child: Container(
-                  padding: EdgeInsets.symmetric(
-                    horizontal: 130.h,
-                    vertical: 12.w,
-                  ),
-                  decoration: BoxDecoration(
-                    gradient: const LinearGradient(
-                      colors: AppConstants.buttonColor,
-                    ),
-                    borderRadius: BorderRadius.circular(24.0),
-                  ),
-                  child: Text(
-                    'Next',
-                    style: TextStyle(
-                      fontSize: 18.sp,
-                      color: AppConstants.mainWhite,
-                    ),
-                  ),
-                ),
+              const InformButton(
+                buttonTitle: "Next",
+                navigationName: NavigationConstants.informPageSecond,
+                valueHorizontal: 120,
+                valueVertical: 12,
               ),
             ],
           ),

@@ -1,10 +1,10 @@
 import 'package:solution_challenge_project/export.dart';
-import 'package:solution_challenge_project/views/campaigns_page/companents/campaigns_content.dart';
-import 'package:solution_challenge_project/views/campaigns_page/companents/profile_campaigns.dart';
+import 'package:solution_challenge_project/views/campaigns_details_page/companents/campaigns_content.dart';
+import 'package:solution_challenge_project/views/campaigns_details_page/companents/profile_campaigns.dart';
 import 'package:solution_challenge_project/views/companents/arrow_left.dart';
 
-class DonatePage1 extends StatelessWidget {
-  const DonatePage1({super.key});
+class CampaignsDetails1 extends StatelessWidget {
+  const CampaignsDetails1({super.key});
 
   @override
   Widget build(BuildContext context) {
