@@ -1,4 +1,3 @@
-import 'package:flutter_animation_progress_bar/flutter_animation_progress_bar.dart';
 import 'package:solution_challenge_project/export.dart';
 
 class LoginPage extends StatelessWidget {
