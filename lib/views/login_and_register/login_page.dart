@@ -1,3 +1,4 @@
+import 'package:flutter_animation_progress_bar/flutter_animation_progress_bar.dart';
 import 'package:solution_challenge_project/export.dart';
 
 class LoginPage extends StatelessWidget {
@@ -101,6 +102,17 @@ class LoginPage extends StatelessWidget {
                 ),
               ],
             ),
+            /* SizedBox(
+              height: 50,
+              width: 150,
+              child: FAProgressBar(
+                currentValue: 25,
+                displayText: '%',
+                direction: Axis.vertical,
+                changeProgressColor: AppConstants.fillColorText,
+                animatedDuration: Duration(milliseconds: 500),
+              ),
+            ) */
           ],
         ),
       ),

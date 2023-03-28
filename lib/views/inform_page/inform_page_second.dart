@@ -1,4 +1,6 @@
 import 'package:solution_challenge_project/export.dart';
+import 'package:solution_challenge_project/views/inform_page/compenents/image_and_title.dart';
+import 'package:solution_challenge_project/views/inform_page/compenents/inform_button.dart';
 
 class InformPageSecond extends StatelessWidget {
   const InformPageSecond({super.key});
@@ -10,17 +12,9 @@ class InformPageSecond extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Image.asset(
-              'assets/images/medical-team.png',
-              width: MediaQuery.of(context).size.width * 0.8,
-            ),
-            SizedBox(height: 32.h),
-            Text(
-              'Don\'t Ignore Calls for Help',
-              style: TextStyle(
-                fontSize: 24.sp,
-                fontWeight: FontWeight.bold,
-              ),
+            const ImageAndTitle(
+              imageAdress: 'assets/images/medical-team.png',
+              imageTitle: 'Don\'t Ignore Calls for Help',
             ),
             SizedBox(height: 16.h),
             Padding(
@@ -35,29 +29,11 @@ class InformPageSecond extends StatelessWidget {
               ),
             ),
             SizedBox(height: 16.h),
-            GestureDetector(
-              onTap: () {
-                Get.toNamed(NavigationConstants.informPageThird);
-              },
-              child: Container(
-                padding: EdgeInsets.symmetric(
-                  horizontal: 130.h,
-                  vertical: 12.w,
-                ),
-                decoration: BoxDecoration(
-                  gradient: const LinearGradient(
-                    colors: AppConstants.buttonColor,
-                  ),
-                  borderRadius: BorderRadius.circular(24.r),
-                ),
-                child: Text(
-                  'Next',
-                  style: TextStyle(
-                    fontSize: 18.sp,
-                    color: AppConstants.mainWhite,
-                  ),
-                ),
-              ),
+            const InformButton(
+              buttonTitle: "Next",
+              navigationName: NavigationConstants.informPageThird,
+              valueHorizontal: 130,
+              valueVertical: 12,
             ),
           ],
         ),

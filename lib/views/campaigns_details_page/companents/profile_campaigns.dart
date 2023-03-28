@@ -1,5 +1,5 @@
 import 'package:solution_challenge_project/export.dart';
-import 'package:solution_challenge_project/views/campaigns_page/companents/profile.dart';
+import 'package:solution_challenge_project/views/campaigns_details_page/companents/profile.dart';
 
 class ProfileCampaigns extends StatelessWidget {
   const ProfileCampaigns({

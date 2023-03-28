@@ -1,6 +1,7 @@
 import 'package:solution_challenge_project/export.dart';
-import 'package:solution_challenge_project/views/campaigns_page/companents/donate_content.dart';
-import 'package:solution_challenge_project/views/campaigns_page/companents/profile.dart';
+import 'package:solution_challenge_project/views/campaigns_details_page/companents/donate_content.dart';
+import 'package:solution_challenge_project/views/campaigns_details_page/companents/donate_info.dart';
+import 'package:solution_challenge_project/views/campaigns_details_page/companents/profile.dart';
 
 class CampaignsContent extends StatelessWidget {
   final String contentTitle;
@@ -68,6 +69,13 @@ class CampaignsContent extends StatelessWidget {
         Padding(
           padding: EdgeInsets.only(top: 130.h),
           child: const DonateContent(),
+        ),
+        Align(
+          alignment: Alignment.center,
+          child: Padding(
+            padding: EdgeInsets.only(top: 95.h),
+            child: const DonateInfo(),
+          ),
         )
       ],
     );
