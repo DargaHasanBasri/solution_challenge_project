@@ -39,7 +39,10 @@ class HomePage extends StatelessWidget {
                         color: AppConstants.mainOrange,
                         fontWeight: FontWeight.bold,
                       ),
-                      recognizer: TapGestureRecognizer()..onTap = () {},
+                      recognizer: TapGestureRecognizer()
+                        ..onTap = () => Get.toNamed(
+                              NavigationConstants.viewAllCampaigns,
+                            ),
                     ),
                   ),
                 ),
