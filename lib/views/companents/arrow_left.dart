@@ -10,7 +10,7 @@ class ArrowLeft extends StatelessWidget {
     return IconButton(
       icon: SvgPicture.asset(
         "assets/icons/arrow.svg",
-        color: AppConstants.mainWhite,
+        color: AppConstants.mainBlack,
         width: 25.w,
         height: 25.h,
       ),
