@@ -1,5 +1,6 @@
 import 'package:solution_challenge_project/export.dart';
 import 'package:solution_challenge_project/views/campaigns_details_page/campaigns_details1.dart';
+import 'package:solution_challenge_project/views/donate_page/donate.dart';
 
 import 'package:solution_challenge_project/views/inform_page/inform_page.dart';
 import 'package:solution_challenge_project/views/inform_page/inform_page_second.dart';
@@ -47,5 +48,10 @@ class NavigationService {
       name: NavigationConstants.informPageThird,
       page: () => const InformPageThird(),
     ),
+    GetPage(
+      name: NavigationConstants.donatePage,
+      page: () => const DonatePage(),
+    ),
+    
   ];
 }

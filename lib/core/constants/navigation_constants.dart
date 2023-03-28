@@ -10,4 +10,6 @@ class NavigationConstants {
   static const informPage = "/informPage";
   static const informPageSecond = "/informPageSecond";
   static const informPageThird = "/informPageThird";
+
+  static const donatePage = "/donatePage";
 }
