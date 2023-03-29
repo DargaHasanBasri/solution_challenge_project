@@ -31,7 +31,7 @@ class DonateAmount extends StatelessWidget {
             ),
           ),
           Padding(
-            padding: EdgeInsets.only(top: 632.h),
+            padding: EdgeInsets.only(top: 626.h),
             child: ClipRRect(
               borderRadius: BorderRadius.only(
                 topRight: Radius.circular(60.r),
