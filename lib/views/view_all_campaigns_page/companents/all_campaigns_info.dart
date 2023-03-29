@@ -1,9 +1,9 @@
 import 'package:solution_challenge_project/export.dart';
 import 'package:solution_challenge_project/views/companents/profile.dart';
 
-class CampaignsInfo extends StatelessWidget {
+class AllCampaignsInfo extends StatelessWidget {
   final dynamic navigationInfoName;
-  const CampaignsInfo({
+  const AllCampaignsInfo({
     super.key,
     this.navigationInfoName,
   });
@@ -13,15 +13,9 @@ class CampaignsInfo extends StatelessWidget {
     return Stack(
       children: [
         Ink(
-          width: 250.w,
+          width: 375.w,
           height: 125.h,
-          decoration: BoxDecoration(
-            borderRadius: BorderRadius.only(
-              bottomLeft: Radius.circular(15.r),
-              bottomRight: Radius.circular(15.r),
-            ),
-            color: AppConstants.mainWhite,
-          ),
+          color: AppConstants.mainWhite,
         ),
         Padding(
           padding: EdgeInsets.only(top: 20.h),

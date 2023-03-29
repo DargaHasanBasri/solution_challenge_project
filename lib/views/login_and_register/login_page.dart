@@ -1,4 +1,3 @@
-import 'package:flutter_animation_progress_bar/flutter_animation_progress_bar.dart';
 import 'package:solution_challenge_project/export.dart';
 
 class LoginPage extends StatelessWidget {
@@ -12,32 +11,8 @@ class LoginPage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const LoginPageLogo(),
-            Row(
-              children: [
-                Padding(
-                  padding: EdgeInsets.only(top: 100.h, left: 79.w),
-                  child: UserButton(
-                    buttonTitle: "Kullanıcı",
-                    buttonBorder: BorderRadius.only(
-                      topLeft: Radius.circular(8.r),
-                      bottomLeft: Radius.circular(8.r),
-                    ),
-                  ),
-                ),
-                Padding(
-                  padding: EdgeInsets.only(top: 100.h, left: 11.w),
-                  child: UserButton(
-                    buttonTitle: "Kurum",
-                    buttonBorder: BorderRadius.only(
-                      topRight: Radius.circular(8.r),
-                      bottomRight: Radius.circular(8.r),
-                    ),
-                  ),
-                ),
-              ],
-            ),
             Padding(
-              padding: EdgeInsets.only(top: 21.h, left: 37.w),
+              padding: EdgeInsets.only(top: 150.h, left: 37.w),
               child: const UserTextFormField(hintTextTitle: "User Name"),
             ),
             Padding(
@@ -101,6 +76,20 @@ class LoginPage extends StatelessWidget {
                   ),
                 ),
               ],
+            ),
+            Align(
+              alignment: Alignment.center,
+              child: Padding(
+                padding: EdgeInsets.only(top: 30.h),
+                child: Text(
+                  "Or continue with",
+                  style: TextStyle(
+                    fontSize: 12.sp,
+                    color: AppConstants.mainOrange,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+              ),
             ),
             /* SizedBox(
               height: 50,

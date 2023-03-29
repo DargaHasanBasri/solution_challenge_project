@@ -11,6 +11,7 @@ class NavigationConstants {
   static const informPageSecond = "/informPageSecond";
   static const informPageThird = "/informPageThird";
 
+  static const viewAllCampaigns = "/viewAllCampaigns";
   static const donatePage = "/donatePage";
 
   static const splashScreen = "/splashScreen";
