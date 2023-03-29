@@ -19,6 +19,8 @@ dependencies:
   circular_seek_bar: ^1.1.0+2
   flutter_animation_progress_bar: ^2.3.1
   google_maps_flutter:
+  image_cropper: ^3.0.2
+  image_picker: ^0.8.7+1
 
 dev_dependencies:
   flutter_test:
