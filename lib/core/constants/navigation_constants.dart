@@ -15,4 +15,6 @@ class NavigationConstants {
   static const donatePage = "/donatePage";
 
   static const splashScreen = "/splashScreen";
+
+  static const choosePhoto = "/choosePhoto";
 }
