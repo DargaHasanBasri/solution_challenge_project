@@ -150,6 +150,40 @@ class HomePage extends StatelessWidget {
           ],
         ),
       ),
+      bottomNavigationBar: BottomNavigationBar(
+        selectedItemColor: AppConstants.mainOrange,
+        unselectedItemColor: AppConstants.mainBlue,
+        showSelectedLabels: true,
+        items: const [
+          BottomNavigationBarItem(
+            icon: Icon(Icons.home),
+            label: 'Home',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.add_box),
+            label: 'Share',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.person),
+            label: 'Profile',
+          ),
+        ],
+        onTap: (index) {
+          switch (index) {
+            case 0:
+              Get.toNamed(NavigationConstants.home);
+              break;
+            case 1:
+              Get.toNamed(NavigationConstants.donatePage);
+              break;
+            case 2:
+              Get.toNamed(NavigationConstants.donatePage);
+              break;
+            default:
+              break;
+          }
+        },
+      ),
     );
   }
 }
