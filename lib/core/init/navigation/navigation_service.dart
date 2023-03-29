@@ -9,6 +9,7 @@ import 'package:solution_challenge_project/views/inform_page/inform_page_third.d
 import 'package:solution_challenge_project/views/login_and_register/new_password_page.dart';
 import 'package:solution_challenge_project/views/login_and_register/password_reset_page.dart';
 import 'package:solution_challenge_project/views/login_and_register/register_page.dart';
+import 'package:solution_challenge_project/views/splash_screen/splash_screen.dart';
 import 'package:solution_challenge_project/views/view_all_campaigns_page/view_all_campaigns.dart';
 
 class NavigationService {
@@ -56,6 +57,10 @@ class NavigationService {
     GetPage(
       name: NavigationConstants.donatePage,
       page: () => const DonatePage(),
+    ),
+    GetPage(
+      name: NavigationConstants.splashScreen,
+      page: () => const SplashScreen(),
     ),
   ];
 }
