@@ -13,4 +13,6 @@ class NavigationConstants {
 
   static const viewAllCampaigns = "/viewAllCampaigns";
   static const donatePage = "/donatePage";
+
+  static const splashScreen = "/splashScreen";
 }
