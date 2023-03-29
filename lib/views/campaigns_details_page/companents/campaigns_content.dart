@@ -66,7 +66,7 @@ class CampaignsContent extends StatelessWidget {
             )
           ],
         ),
-        Padding(
+        /* Padding(
           padding: EdgeInsets.only(top: 130.h),
           child: const DonateContent(),
         ),
@@ -76,7 +76,7 @@ class CampaignsContent extends StatelessWidget {
             padding: EdgeInsets.only(top: 95.h),
             child: const DonateInfo(),
           ),
-        )
+        ) */
       ],
     );
   }
