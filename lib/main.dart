@@ -9,9 +9,7 @@ void main() async {
         debugShowCheckedModeBanner: false,
         title: AppConstants.appName,
         getPages: NavigationService.routes,
-        initialRoute: NavigationConstants.loginPage,
-        initialRoute: NavigationConstants.informPage,
-        initialRoute: NavigationConstants.campaignsDetails1,
+        initialRoute: NavigationConstants.splashScreen,
         // initialBinding: InitialBinding(), // Initial binding always run
         theme: AppTheme.instance.lightTheme,
       ),
