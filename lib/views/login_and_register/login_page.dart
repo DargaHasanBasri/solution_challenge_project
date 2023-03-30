@@ -1,3 +1,4 @@
+import 'package:solution_challenge_project/core/constants/font_constants.dart';
 import 'package:solution_challenge_project/export.dart';
 
 class LoginPage extends StatelessWidget {
@@ -28,6 +29,7 @@ class LoginPage extends StatelessWidget {
                     text: "Parolamı unuttum",
                     style: TextStyle(
                       fontSize: 12.sp,
+                      fontFamily: FontConstants.openSansBold,
                       decoration: TextDecoration.underline,
                       color: AppConstants.mainOrange,
                     ),
@@ -53,6 +55,7 @@ class LoginPage extends StatelessWidget {
                   child: Text(
                     "Bir hesabın yok mu?",
                     style: TextStyle(
+                      fontFamily: FontConstants.openSansBold,
                       fontSize: 12.sp,
                       color: AppConstants.mainBlue,
                     ),
@@ -64,6 +67,7 @@ class LoginPage extends StatelessWidget {
                     text: TextSpan(
                       text: "Hemen Kaydol",
                       style: TextStyle(
+                        fontFamily: FontConstants.openSansBold,
                         fontSize: 12.sp,
                         decoration: TextDecoration.underline,
                         color: AppConstants.mainOrange,
@@ -85,6 +89,7 @@ class LoginPage extends StatelessWidget {
                   "Or continue with",
                   style: TextStyle(
                     fontSize: 12.sp,
+                    fontFamily: FontConstants.openSansBold,
                     color: AppConstants.mainOrange,
                     fontWeight: FontWeight.bold,
                   ),

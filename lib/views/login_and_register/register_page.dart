@@ -1,3 +1,4 @@
+import 'package:solution_challenge_project/core/constants/font_constants.dart';
 import 'package:solution_challenge_project/export.dart';
 
 class RegisterPage extends StatelessWidget {
@@ -26,6 +27,7 @@ class RegisterPage extends StatelessWidget {
               child: Text(
                 "Create Account",
                 style: TextStyle(
+                  fontFamily: FontConstants.playfairDisplaySemiBold,
                   fontSize: 20.sp,
                   color: Colors.black,
                 ),
@@ -64,10 +66,11 @@ class RegisterPage extends StatelessWidget {
               child: const ActionButton(buttonTitle: "Login"),
             ),
             Padding(
-              padding: EdgeInsets.only(top: 13.h, left: 57.w),
+              padding: EdgeInsets.only(top: 13.h, left: 47.w),
               child: Text(
                 "By clicking Register, you agree on our Privacy Policy.",
                 style: TextStyle(
+                  fontFamily: FontConstants.openSansBold,
                   fontSize: 11.sp,
                   color: Colors.black,
                 ),
@@ -86,7 +89,10 @@ class RegisterPage extends StatelessWidget {
                     },
                     child: const Text(
                       "Sign In",
-                      style: TextStyle(color: AppConstants.mainBlue),
+                      style: TextStyle(
+                        color: AppConstants.mainBlue,
+                        fontFamily: FontConstants.openSansBold,
+                      ),
                     ),
                   ),
                 ],

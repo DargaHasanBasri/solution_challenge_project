@@ -1,3 +1,4 @@
+import 'package:solution_challenge_project/core/constants/font_constants.dart';
 import 'package:solution_challenge_project/export.dart';
 
 class VolunteersInkwell extends StatelessWidget {
@@ -40,6 +41,7 @@ class VolunteersInkwell extends StatelessWidget {
                     child: Text(
                       "See",
                       style: TextStyle(
+                        fontFamily: FontConstants.openSansMedium,
                         fontSize: 12.sp,
                         color: AppConstants.mainWhite,
                       ),

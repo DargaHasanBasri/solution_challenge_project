@@ -1,3 +1,4 @@
+import 'package:solution_challenge_project/core/constants/font_constants.dart';
 import 'package:solution_challenge_project/export.dart';
 import 'package:solution_challenge_project/views/companents/profile.dart';
 
@@ -51,6 +52,7 @@ class CampaignsInfo extends StatelessWidget {
                 child: Text(
                   "6.258+ people Donate",
                   style: TextStyle(
+                    fontFamily: FontConstants.openSansBold,
                     fontSize: 12.sp,
                     color: AppConstants.mainBlack,
                   ),
@@ -69,7 +71,8 @@ class CampaignsInfo extends StatelessWidget {
                   Text(
                     "Donate for hungry people.",
                     style: TextStyle(
-                      fontSize: 16.sp,
+                      fontFamily: FontConstants.openSansMedium,
+                      fontSize: 15.sp,
                       color: AppConstants.mainBlack,
                     ),
                   ),
@@ -79,7 +82,7 @@ class CampaignsInfo extends StatelessWidget {
                       text: TextSpan(
                         text: "Read More...",
                         style: TextStyle(
-                          fontSize: 8.sp,
+                          fontSize: 9.sp,
                           color: AppConstants.mainOrange,
                         ),
                         recognizer: TapGestureRecognizer()

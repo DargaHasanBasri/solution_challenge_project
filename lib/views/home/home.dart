@@ -1,3 +1,4 @@
+import 'package:solution_challenge_project/core/constants/font_constants.dart';
 import 'package:solution_challenge_project/export.dart';
 import 'package:solution_challenge_project/views/home/companents/campaigns_inkwell.dart';
 import 'package:solution_challenge_project/views/home/companents/profile_hello.dart';
@@ -23,6 +24,7 @@ class HomePage extends StatelessWidget {
                   child: Text(
                     "Need to Help",
                     style: TextStyle(
+                      fontFamily: FontConstants.playfairDisplaySemiBold,
                       fontSize: 16.sp,
                       color: Colors.black,
                       fontWeight: FontWeight.bold,
@@ -35,6 +37,7 @@ class HomePage extends StatelessWidget {
                     text: TextSpan(
                       text: "View All",
                       style: TextStyle(
+                        fontFamily: FontConstants.openSansMedium,
                         fontSize: 16.sp,
                         color: AppConstants.mainOrange,
                         fontWeight: FontWeight.bold,
@@ -88,6 +91,7 @@ class HomePage extends StatelessWidget {
                   child: Text(
                     "Volunteers",
                     style: TextStyle(
+                      fontFamily: FontConstants.playfairDisplaySemiBold,
                       fontSize: 16.sp,
                       color: Colors.black,
                       fontWeight: FontWeight.bold,
@@ -100,6 +104,7 @@ class HomePage extends StatelessWidget {
                     text: TextSpan(
                       text: "View All",
                       style: TextStyle(
+                        fontFamily: FontConstants.openSansMedium,
                         fontSize: 16.sp,
                         color: AppConstants.mainOrange,
                         fontWeight: FontWeight.bold,

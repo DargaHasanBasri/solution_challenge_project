@@ -1,3 +1,4 @@
+import 'package:solution_challenge_project/core/constants/font_constants.dart';
 import 'package:solution_challenge_project/export.dart';
 import 'package:solution_challenge_project/views/companents/profile.dart';
 
@@ -16,6 +17,7 @@ class ProfileCampaigns extends StatelessWidget {
           child: Text(
             "By MSK Organigation",
             style: TextStyle(
+              fontFamily: FontConstants.playfairDisplayMedium,
               fontSize: 16.sp,
               color: AppConstants.mainWhite,
               fontWeight: FontWeight.bold,
