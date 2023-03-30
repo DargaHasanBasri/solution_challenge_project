@@ -174,7 +174,7 @@ class HomePage extends StatelessWidget {
               Get.toNamed(NavigationConstants.home);
               break;
             case 1:
-              Get.toNamed(NavigationConstants.donatePage);
+              Get.toNamed(NavigationConstants.choosePhoto);
               break;
             case 2:
               Get.toNamed(NavigationConstants.donatePage);

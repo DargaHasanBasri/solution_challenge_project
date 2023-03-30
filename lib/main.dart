@@ -9,7 +9,7 @@ void main() async {
         debugShowCheckedModeBanner: false,
         title: AppConstants.appName,
         getPages: NavigationService.routes,
-        initialRoute: NavigationConstants.choosePhoto,
+        initialRoute: NavigationConstants.splashScreen,
         // initialBinding: InitialBinding(), // Initial binding always run
         theme: AppTheme.instance.lightTheme,
       ),
