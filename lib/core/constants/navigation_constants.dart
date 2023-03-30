@@ -17,4 +17,6 @@ class NavigationConstants {
   static const splashScreen = "/splashScreen";
 
   static const choosePhoto = "/choosePhoto";
+
+  static const profileScreen = "/profilescreen";
 }
