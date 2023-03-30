@@ -1,4 +1,3 @@
-import 'package:solution_challenge_project/core/constants/font_constants.dart';
 import 'package:solution_challenge_project/export.dart';
 import 'package:solution_challenge_project/views/inform_page/compenents/image_and_title.dart';
 import 'package:solution_challenge_project/views/inform_page/compenents/inform_button.dart';

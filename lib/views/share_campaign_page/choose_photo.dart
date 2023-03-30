@@ -1,8 +1,6 @@
 import 'dart:io';
-
 import 'package:image_picker/image_picker.dart';
 import 'package:solution_challenge_project/export.dart';
-import 'package:solution_challenge_project/views/companents/arrow_left.dart';
 
 class ChoosePhoto extends StatefulWidget {
   const ChoosePhoto({super.key});
@@ -21,7 +19,18 @@ class _ChoosePhotoState extends State<ChoosePhoto> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             SizedBox(height: 50.h),
-            ArrowLeft(),
+            Row(
+              children: [
+                const ArrowLeft(),
+                Text(
+                  "Post Paylaşımı",
+                  style: TextStyle(
+                    fontSize: 20.sp,
+                    color: AppConstants.mainBlack,
+                  ),
+                ),
+              ],
+            ),
             SizedBox(height: 50.h),
             Align(
               alignment: Alignment.center,
@@ -31,26 +40,41 @@ class _ChoosePhotoState extends State<ChoosePhoto> {
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(25.r),
                     ),
-                    child: Container(
-                      width: 350.w,
-                      height: 200.h,
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(25.r),
-                        color: AppConstants.fillColorText,
-                      ),
-                      child: _chooseFile == null
-                          ? Center(
-                              child: Text(
-                                "Post",
-                                style: TextStyle(
-                                  fontSize: 18.sp,
+                    child: Stack(
+                      children: [
+                        Container(
+                          width: 350.w,
+                          height: 200.h,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(25.r),
+                            color: AppConstants.mainOrange,
+                          ),
+                          child: _chooseFile == null
+                              ? Center(
+                                  child: Text(
+                                    "Post",
+                                    style: TextStyle(
+                                      fontSize: 30.sp,
+                                      fontFamily:
+                                          FontConstants.playfairDisplaySemiBold,
+                                    ),
+                                  ),
+                                )
+                              : Image.file(
+                                  _chooseFile!,
+                                  fit: BoxFit.cover,
                                 ),
-                              ),
-                            )
-                          : Image.file(
-                              _chooseFile!,
-                              fit: BoxFit.cover,
-                            ),
+                        ),
+                        Padding(
+                          padding: EdgeInsets.only(top: 150.h, left: 300.w),
+                          child: IconButton(
+                            onPressed: () {
+                              _chooseFotoSee(context);
+                            },
+                            icon: const Icon(Icons.add_a_photo),
+                          ),
+                        )
+                      ],
                     ),
                   ),
                   SizedBox(height: 20.h),
@@ -82,9 +106,7 @@ class _ChoosePhotoState extends State<ChoosePhoto> {
                     height: 58.h,
                     width: 300.w,
                     child: ElevatedButton(
-                      onPressed: () {
-                        _chooseFotoSee(context);
-                      },
+                      onPressed: () {},
                       style: ElevatedButton.styleFrom(
                         backgroundColor: AppConstants.mainBlue,
                         shape: RoundedRectangleBorder(
@@ -92,30 +114,8 @@ class _ChoosePhotoState extends State<ChoosePhoto> {
                         ),
                       ),
                       child: Text(
-                        "Fotoğraf Seç",
-                        style: TextStyle(fontSize: 18.sp),
-                      ),
-                    ),
-                  ),
-                  Padding(
-                    padding: EdgeInsets.only(top: 150.h, left: 250.w),
-                    child: SizedBox(
-                      height: 40.h,
-                      width: 100.w,
-                      child: ElevatedButton(
-                        onPressed: () {
-                          Get.toNamed(NavigationConstants.viewAllCampaigns);
-                        },
-                        style: ElevatedButton.styleFrom(
-                          backgroundColor: AppConstants.mainBlue,
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(15.r),
-                          ),
-                        ),
-                        child: Text(
-                          "Submit",
-                          style: TextStyle(fontSize: 18.sp),
-                        ),
+                        "Submit",
+                        style: TextStyle(fontSize: 22.sp),
                       ),
                     ),
                   ),

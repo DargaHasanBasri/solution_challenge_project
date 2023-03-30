@@ -19,3 +19,5 @@ export 'package:solution_challenge_project/views/login_and_register/companents/p
 export 'package:solution_challenge_project/views/login_and_register/companents/login_page_logo.dart';
 export 'package:flutter_svg/flutter_svg.dart';
 export 'package:flutter/gestures.dart';
+export 'package:solution_challenge_project/views/companents/arrow_left.dart';
+export 'package:solution_challenge_project/core/constants/font_constants.dart';

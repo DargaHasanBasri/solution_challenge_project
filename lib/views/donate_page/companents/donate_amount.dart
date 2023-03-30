@@ -1,5 +1,4 @@
 import 'package:solution_challenge_project/export.dart';
-import 'package:solution_challenge_project/views/companents/arrow_left.dart';
 
 class DonateAmount extends StatelessWidget {
   const DonateAmount({
@@ -31,7 +30,7 @@ class DonateAmount extends StatelessWidget {
             ),
           ),
           Padding(
-            padding: EdgeInsets.only(top: 626.h),
+            padding: EdgeInsets.only(top: 632.h),
             child: ClipRRect(
               borderRadius: BorderRadius.only(
                 topRight: Radius.circular(60.r),

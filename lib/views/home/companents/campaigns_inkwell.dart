@@ -1,5 +1,4 @@
 import 'package:solution_challenge_project/export.dart';
-import 'package:solution_challenge_project/views/home/companents/campaigns_info.dart';
 
 class CampaignsInkwell extends StatelessWidget {
   final String imageAdress;
