@@ -21,6 +21,7 @@ dependencies:
   google_maps_flutter:
   image_cropper: ^3.0.2
   image_picker: ^0.8.7+1
+  firebase_core:
 
 dev_dependencies:
   flutter_test:
@@ -34,3 +35,21 @@ flutter:
   assets:
     - assets/images/
     - assets/icons/
+  fonts:
+    - family: OpenSans-Bold
+      fonts:
+        - asset: assets/fonts/open_sans/OpenSans-Bold.ttf
+    - family: OpenSans-Medium
+      fonts:
+        - asset: assets/fonts/open_sans/OpenSans-Medium.ttf
+    - family: PlayfairDisplay-Medium
+      fonts:
+        - asset: assets/fonts/playfair_display/PlayfairDisplay-Medium.ttf
+    - family: PlayfairDisplay-Regular
+      fonts:
+        - asset: assets/fonts/playfair_display/PlayfairDisplay-Regular.ttf
+    - family: PlayfairDisplay-SemiBold
+      fonts:
+        - asset: assets/fonts/playfair_display/PlayfairDisplay-SemiBold.ttf
+    
+
