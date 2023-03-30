@@ -1,3 +1,4 @@
+import 'package:solution_challenge_project/core/constants/font_constants.dart';
 import 'package:solution_challenge_project/export.dart';
 import 'package:solution_challenge_project/views/companents/profile.dart';
 
@@ -45,6 +46,7 @@ class AllCampaignsInfo extends StatelessWidget {
                 child: Text(
                   "6.258+ people Donate",
                   style: TextStyle(
+                    fontFamily: FontConstants.openSansBold,
                     fontSize: 12.sp,
                     color: AppConstants.mainBlack,
                   ),
@@ -63,6 +65,7 @@ class AllCampaignsInfo extends StatelessWidget {
                   Text(
                     "Donate for hungry people.",
                     style: TextStyle(
+                      fontFamily: FontConstants.openSansMedium,
                       fontSize: 16.sp,
                       color: AppConstants.mainBlack,
                     ),
@@ -73,6 +76,7 @@ class AllCampaignsInfo extends StatelessWidget {
                       text: TextSpan(
                         text: "Read More...",
                         style: TextStyle(
+                          fontFamily: FontConstants.openSansBold,
                           fontSize: 8.sp,
                           color: AppConstants.mainOrange,
                         ),
@@ -80,8 +84,26 @@ class AllCampaignsInfo extends StatelessWidget {
                           ..onTap = () => Get.toNamed(navigationInfoName),
                       ),
                     ),
-                  )
+                  ),
                 ],
+              ),
+              const SizedBox(
+                height: 15,
+              ),
+              Padding(
+                padding: EdgeInsets.only(top: 5.h),
+                child: RichText(
+                    text: TextSpan(
+                  text: "5 hours ago",
+                  style: TextStyle(
+                    fontFamily: FontConstants.openSansMedium,
+                    fontSize: 8.sp,
+                    color: AppConstants.mainBlack.withOpacity(0.5),
+                  ),
+                )),
+              ),
+              const SizedBox(
+                height: 15,
               ),
             ],
           ),

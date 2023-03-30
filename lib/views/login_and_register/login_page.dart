@@ -44,7 +44,7 @@ class LoginPage extends StatelessWidget {
               padding: EdgeInsets.only(top: 10.h, left: 37.w),
               child: const ActionButton(
                 buttonTitle: "Login",
-                navigationName: NavigationConstants.home,
+                navigationName: NavigationConstants.navbar,
               ),
             ),
             Row(

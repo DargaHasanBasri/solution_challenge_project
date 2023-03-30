@@ -59,7 +59,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
             ),
             Container(
               padding: EdgeInsets.only(
-                  right: 36.w, left: 36.w, bottom: 30.h, top: 50.h),
+                  right: 36.w, left: 36.w, bottom: 20.h, top: 50.h),
               child: TextFormField(
                 decoration: InputDecoration(
                   border: OutlineInputBorder(
@@ -71,7 +71,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
               ),
             ),
             Container(
-              padding: EdgeInsets.only(right: 36.w, left: 36.w, bottom: 30.h),
+              padding: EdgeInsets.only(right: 36.w, left: 36.w, bottom: 20.h),
               child: TextFormField(
                 decoration: InputDecoration(
                   border: OutlineInputBorder(
@@ -83,7 +83,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
               ),
             ),
             Container(
-              padding: EdgeInsets.only(right: 36.w, left: 36.w, bottom: 30.h),
+              padding: EdgeInsets.only(right: 36.w, left: 36.w, bottom: 20.h),
               child: TextFormField(
                 decoration: InputDecoration(
                   border: OutlineInputBorder(
@@ -95,7 +95,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
               ),
             ),
             Container(
-              padding: EdgeInsets.only(right: 36.w, left: 36.w, bottom: 30.h),
+              padding: EdgeInsets.only(right: 36.w, left: 36.w, bottom: 15.h),
               child: TextFormField(
                 decoration: InputDecoration(
                   border: OutlineInputBorder(
