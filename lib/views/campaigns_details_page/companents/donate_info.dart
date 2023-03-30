@@ -1,5 +1,6 @@
 import 'package:circular_seek_bar/circular_seek_bar.dart';
 import 'package:solution_challenge_project/export.dart';
+import 'package:solution_challenge_project/views/companents/progress_bar.dart';
 
 class DonateInfo extends StatelessWidget {
   const DonateInfo({
@@ -21,6 +22,19 @@ class DonateInfo extends StatelessWidget {
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(25.r),
               color: AppConstants.mainWhite,
+            ),
+          ),
+          Padding(
+            padding: EdgeInsets.only(top: 15.h, left: 45.w),
+            child: SizedBox(
+              width: 250.w,
+              child: FAProgressBar(
+                currentValue: 70,
+                displayText: '%',
+                size: 10.w,
+                progressColor: AppConstants.mainOrange,
+                backgroundColor: AppConstants.fillColorText,
+              ),
             ),
           ),
           Padding(
