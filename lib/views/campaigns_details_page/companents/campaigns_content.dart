@@ -1,3 +1,4 @@
+import 'package:solution_challenge_project/core/constants/font_constants.dart';
 import 'package:solution_challenge_project/export.dart';
 import 'package:solution_challenge_project/views/campaigns_details_page/companents/donate_content.dart';
 import 'package:solution_challenge_project/views/campaigns_details_page/companents/donate_info.dart';
@@ -59,6 +60,7 @@ class CampaignsContent extends StatelessWidget {
               child: Text(
                 "6.258+ people Donated",
                 style: TextStyle(
+                  fontFamily: FontConstants.openSansBold,
                   fontSize: 12.sp,
                   color: AppConstants.mainWhite,
                 ),

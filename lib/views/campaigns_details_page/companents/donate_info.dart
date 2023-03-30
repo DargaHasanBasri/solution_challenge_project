@@ -1,4 +1,5 @@
 import 'package:circular_seek_bar/circular_seek_bar.dart';
+import 'package:solution_challenge_project/core/constants/font_constants.dart';
 import 'package:solution_challenge_project/export.dart';
 
 class DonateInfo extends StatelessWidget {
@@ -43,6 +44,7 @@ class DonateInfo extends StatelessWidget {
             child: Text(
               "\t\tGoal\n200.000",
               style: TextStyle(
+                fontFamily: FontConstants.playfairDisplayMedium,
                 fontSize: 18.sp,
                 color: AppConstants.mainBlack,
                 fontWeight: FontWeight.bold,
@@ -54,6 +56,7 @@ class DonateInfo extends StatelessWidget {
             child: Text(
               "\tRasied\n170.000",
               style: TextStyle(
+                fontFamily: FontConstants.playfairDisplayMedium,
                 fontSize: 18.sp,
                 color: AppConstants.mainBlack,
                 fontWeight: FontWeight.bold,

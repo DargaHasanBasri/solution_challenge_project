@@ -1,3 +1,4 @@
+import 'package:solution_challenge_project/core/constants/font_constants.dart';
 import 'package:solution_challenge_project/export.dart';
 import 'package:solution_challenge_project/views/home/companents/search_bar.dart';
 
@@ -61,6 +62,7 @@ class ProfileHello extends StatelessWidget {
                   child: Text(
                     "Good Morning!",
                     style: TextStyle(
+                      fontFamily: FontConstants.playfairDisplaySemiBold,
                       fontSize: 24.sp,
                       color: AppConstants.mainWhite,
                       fontWeight: FontWeight.bold,

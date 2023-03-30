@@ -1,3 +1,4 @@
+import 'package:solution_challenge_project/core/constants/font_constants.dart';
 import 'package:solution_challenge_project/export.dart';
 
 class DonateContent extends StatelessWidget {
@@ -20,10 +21,11 @@ class DonateContent extends StatelessWidget {
       child: Padding(
         padding: EdgeInsets.only(top: 150.h, left: 15.w, right: 15.w),
         child: Text(
-          "Kolera genellikle bakterinin bulaşmış olduğu deniz ürünleri, yiyecekler ve içme suyu ile vücuda bulaşır. Kalabalık ortamlarda yaşayan savaş, yoksulluk ve temizliğe dikkat edilmeyen topluluklarda kolayca yayılıp ölümlere yol açabilmektedir."
-          "Dünya Sağlık Örgütü, her yıl 1, 3 milyon ila 4 milyon vaka olduğunu bildiriyor. . Genel olarak Afrika, Güney Asya ve Latin Amerika'nın bazı eyaletlerinde görülmektedir. "
-          "Hastalığın tedavisinde serum ve çeşitli antibiyotikler kullanılmaktadır.",
+          "Cholera is usually transmitted to the body through seafood, food, and drinking water contaminated with the bacteria. It can easily spread in crowded environments and lead to deaths in communities affected by war, poverty, and poor sanitation practices."
+          "The World Health Organization reports between 1.3 million and 4 million cases each year. It is generally found in some provinces of Africa, South Asia, and Latin America."
+          "Treatment for the disease involves the use of serum and various antibiotics",
           style: TextStyle(
+            fontFamily: FontConstants.openSansMedium,
             fontSize: 12.sp,
             color: Colors.black,
           ),

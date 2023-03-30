@@ -1,3 +1,4 @@
+import 'package:solution_challenge_project/core/constants/font_constants.dart';
 import 'package:solution_challenge_project/export.dart';
 import 'package:solution_challenge_project/views/inform_page/compenents/image_and_title.dart';
 import 'package:solution_challenge_project/views/inform_page/compenents/inform_button.dart';
@@ -24,6 +25,7 @@ class InformPage extends StatelessWidget {
                   'Inadequate resources cause 1.8M Africans to suffer from cataract blindness annually, risking fatalities.',
                   textAlign: TextAlign.center,
                   style: TextStyle(
+                    fontFamily: FontConstants.openSansMedium,
                     fontSize: 16.sp,
                     color: Colors.grey[600],
                   ),
