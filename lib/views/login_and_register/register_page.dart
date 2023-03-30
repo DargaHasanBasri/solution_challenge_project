@@ -57,7 +57,7 @@ class RegisterPage extends StatelessWidget {
             ),
             Padding(
               padding: EdgeInsets.only(top: 10.h, left: 37.w),
-              child: const UserTextFormField(hintTextTitle: "Profession ?"),
+              child: const UserTextFormField(hintTextTitle: "Profession"),
             ),
             Padding(
               padding: EdgeInsets.only(top: 20.h, left: 37.w),
