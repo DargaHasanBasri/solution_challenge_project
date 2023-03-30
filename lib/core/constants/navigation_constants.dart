@@ -19,4 +19,6 @@ class NavigationConstants {
   static const choosePhoto = "/choosePhoto";
 
   static const profileScreen = "/profilescreen";
+
+  static const navbar = "/navbar";
 }

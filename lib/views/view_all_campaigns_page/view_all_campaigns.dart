@@ -1,3 +1,4 @@
+import 'package:solution_challenge_project/core/constants/font_constants.dart';
 import 'package:solution_challenge_project/export.dart';
 import 'package:solution_challenge_project/views/companents/arrow_left.dart';
 import 'package:solution_challenge_project/views/view_all_campaigns_page/companents/all_campaigns.dart';
@@ -24,6 +25,7 @@ class ViewAllCampaigns extends StatelessWidget {
                   child: Text(
                     "Campaigns",
                     style: TextStyle(
+                      fontFamily: FontConstants.playfairDisplayMedium,
                       fontSize: 22.sp,
                       color: AppConstants.mainBlue,
                     ),
@@ -32,7 +34,9 @@ class ViewAllCampaigns extends StatelessWidget {
               ],
             ),
             Padding(
-              padding: EdgeInsets.only(top: 10.h),
+              padding: EdgeInsets.only(
+                top: 10.h,
+              ),
               child: const AllCampaigns(
                 imageAdress: "assets/images/resim1.png",
                 countryName: "Africa",

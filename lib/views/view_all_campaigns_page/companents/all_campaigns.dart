@@ -1,3 +1,4 @@
+import 'package:solution_challenge_project/core/constants/font_constants.dart';
 import 'package:solution_challenge_project/export.dart';
 import 'package:solution_challenge_project/views/companents/divider_build.dart';
 
@@ -20,7 +21,7 @@ class AllCampaigns extends StatelessWidget {
       children: [
         Container(
           width: 375.w,
-          height: 45.h,
+          height: 55.h,
           color: AppConstants.mainWhite,
           child: Stack(
             children: [
@@ -31,15 +32,16 @@ class AllCampaigns extends StatelessWidget {
               Row(
                 children: [
                   Padding(
-                    padding: EdgeInsets.only(top: 3.h, left: 5.w, right: 5.w),
+                    padding: EdgeInsets.only(top: 5.h, left: 5.w, right: 5.w),
                     child: CircleAvatar(
                       radius: 20.r,
                       backgroundImage: AssetImage(profileAdress),
                     ),
                   ),
                   Text(
-                    "Kullanıcı Adı",
+                    "UNICEF",
                     style: TextStyle(
+                      fontFamily: FontConstants.openSansBold,
                       fontSize: 12.sp,
                       color: AppConstants.mainOrange,
                     ),
