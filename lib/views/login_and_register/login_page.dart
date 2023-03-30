@@ -1,4 +1,3 @@
-import 'package:solution_challenge_project/core/constants/font_constants.dart';
 import 'package:solution_challenge_project/export.dart';
 
 class LoginPage extends StatelessWidget {
@@ -12,8 +11,38 @@ class LoginPage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const LoginPageLogo(),
+            Container(
+              color: AppConstants.mainWhite,
+              child: Center(
+                child: Image.asset(
+                  "assets/images/splash_photo.png",
+                  width: 250.w,
+                  height: 200.h,
+                ),
+              ),
+            ),
             Padding(
-              padding: EdgeInsets.only(top: 150.h, left: 37.w),
+              padding: EdgeInsets.only(left: 130.w),
+              child: Container(
+                width: 100.w,
+                height: 30.h,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(10.r),
+                  color: AppConstants.mainBlue,
+                ),
+                child: Center(
+                  child: Text(
+                    "Kurum",
+                    style: TextStyle(
+                      fontSize: 18.sp,
+                      color: AppConstants.mainWhite,
+                    ),
+                  ),
+                ),
+              ),
+            ),
+            Padding(
+              padding: EdgeInsets.only(top: 20.h, left: 37.w),
               child: const UserTextFormField(hintTextTitle: "User Name"),
             ),
             Padding(

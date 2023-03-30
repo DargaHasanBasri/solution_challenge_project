@@ -1,4 +1,3 @@
-import 'package:solution_challenge_project/core/constants/font_constants.dart';
 import 'package:solution_challenge_project/export.dart';
 import 'package:solution_challenge_project/views/home/companents/campaigns_info.dart';
 import 'package:solution_challenge_project/views/home/companents/campaigns_inkwell.dart';

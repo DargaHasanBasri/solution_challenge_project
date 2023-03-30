@@ -1,5 +1,4 @@
 import 'package:circular_seek_bar/circular_seek_bar.dart';
-import 'package:solution_challenge_project/core/constants/font_constants.dart';
 import 'package:solution_challenge_project/export.dart';
 import 'package:solution_challenge_project/views/companents/progress_bar.dart';
 
@@ -25,21 +24,35 @@ class DonateInfo extends StatelessWidget {
               color: AppConstants.mainWhite,
             ),
           ),
-          Padding(
-            padding: EdgeInsets.only(top: 15.h, left: 45.w),
-            child: SizedBox(
-              width: 250.w,
-              child: FAProgressBar(
-                currentValue: 70,
-                displayText: '%',
-                size: 10.w,
-                progressColor: AppConstants.mainOrange,
-                backgroundColor: AppConstants.fillColorText,
+          Column(
+            children: [
+              Padding(
+                padding: EdgeInsets.only(top: 15.h, left: 25.w),
+                child: SizedBox(
+                  width: 290.w,
+                  child: FAProgressBar(
+                    currentValue: 70,
+                    displayText: '%',
+                    size: 10.w,
+                    progressColor: AppConstants.mainOrange,
+                    backgroundColor: AppConstants.fillColorText,
+                  ),
+                ),
               ),
-            ),
+              Padding(
+                padding: EdgeInsets.only(top: 5.h, left: 30.w),
+                child: Text(
+                  "20 days left",
+                  style: TextStyle(
+                    fontSize: 12.sp,
+                    fontFamily: FontConstants.openSansBold,
+                  ),
+                ),
+              )
+            ],
           ),
           Padding(
-            padding: EdgeInsets.only(top: 60.h, left: 135.w),
+            padding: EdgeInsets.only(top: 60.h, left: 140.w),
             child: const CircularSeekBar(
               width: 70,
               height: 70,

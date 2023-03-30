@@ -90,7 +90,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                       borderRadius: BorderRadius.circular(15),
                       borderSide: BorderSide(color: Colors.grey.shade300)),
                   labelText: "Phone Number",
-                  suffixIcon: Icon(Icons.phone),
+                  suffixIcon: const Icon(Icons.phone),
                 ),
               ),
             ),

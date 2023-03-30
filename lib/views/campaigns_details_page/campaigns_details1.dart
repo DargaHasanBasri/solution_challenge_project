@@ -3,7 +3,6 @@ import 'package:solution_challenge_project/views/campaigns_details_page/companen
 import 'package:solution_challenge_project/views/campaigns_details_page/companents/donate_content.dart';
 import 'package:solution_challenge_project/views/campaigns_details_page/companents/donate_info.dart';
 import 'package:solution_challenge_project/views/campaigns_details_page/companents/profile_campaigns.dart';
-import 'package:solution_challenge_project/views/companents/arrow_left.dart';
 
 class CampaignsDetails1 extends StatelessWidget {
   const CampaignsDetails1({super.key});

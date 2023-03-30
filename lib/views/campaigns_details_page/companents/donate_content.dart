@@ -1,4 +1,3 @@
-import 'package:solution_challenge_project/core/constants/font_constants.dart';
 import 'package:solution_challenge_project/export.dart';
 
 class DonateContent extends StatelessWidget {
