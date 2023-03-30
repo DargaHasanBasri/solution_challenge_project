@@ -1,3 +1,4 @@
+import 'package:solution_challenge_project/core/constants/font_constants.dart';
 import 'package:solution_challenge_project/export.dart';
 import 'package:solution_challenge_project/views/inform_page/compenents/image_and_title.dart';
 import 'package:solution_challenge_project/views/inform_page/compenents/inform_button.dart';
@@ -23,8 +24,9 @@ class InformPageSecond extends StatelessWidget {
                 'Overwhelming scientific evidence confirms the severe and lasting impact of AIDS on individuals and communities globally.',
                 textAlign: TextAlign.center,
                 style: TextStyle(
-                  fontSize: 16.sp,
+                  fontSize: 14.sp,
                   color: Colors.grey[600],
+                  fontFamily: FontConstants.openSansMedium,
                 ),
               ),
             ),
