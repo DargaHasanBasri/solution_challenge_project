@@ -1,5 +1,4 @@
 import 'package:solution_challenge_project/export.dart';
-import 'package:solution_challenge_project/views/companents/arrow_left.dart';
 import 'package:solution_challenge_project/views/donate_page/companents/campaigns_poster.dart';
 import 'package:solution_challenge_project/views/donate_page/companents/donate_amount.dart';
 

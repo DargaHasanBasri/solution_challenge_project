@@ -1,7 +1,5 @@
 import 'package:solution_challenge_project/core/constants/font_constants.dart';
 import 'package:solution_challenge_project/export.dart';
-import 'package:solution_challenge_project/views/campaigns_details_page/companents/donate_content.dart';
-import 'package:solution_challenge_project/views/campaigns_details_page/companents/donate_info.dart';
 import 'package:solution_challenge_project/views/companents/profile.dart';
 
 class CampaignsContent extends StatelessWidget {

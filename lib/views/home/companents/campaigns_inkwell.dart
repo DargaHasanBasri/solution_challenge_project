@@ -75,7 +75,6 @@ class CampaignsInkwell extends StatelessWidget {
             ),
           ],
         ),
-        CampaignsInfo(navigationInfoName: navigationName)
       ],
     );
   }

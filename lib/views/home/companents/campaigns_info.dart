@@ -1,12 +1,17 @@
 import 'package:solution_challenge_project/core/constants/font_constants.dart';
 import 'package:solution_challenge_project/export.dart';
 import 'package:solution_challenge_project/views/companents/profile.dart';
+import 'package:solution_challenge_project/views/companents/progress_bar.dart';
 
 class CampaignsInfo extends StatelessWidget {
   final dynamic navigationInfoName;
+  final double progressValue;
+  final String progressInfo;
   const CampaignsInfo({
     super.key,
     this.navigationInfoName,
+    required this.progressValue,
+    required this.progressInfo,
   });
 
   @override
@@ -15,7 +20,7 @@ class CampaignsInfo extends StatelessWidget {
       children: [
         Ink(
           width: 250.w,
-          height: 125.h,
+          height: 145.h,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.only(
               bottomLeft: Radius.circular(15.r),
@@ -92,6 +97,34 @@ class CampaignsInfo extends StatelessWidget {
                   )
                 ],
               ),
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Padding(
+                    padding: EdgeInsets.only(top: 15.h),
+                    child: SizedBox(
+                      width: 240.h,
+                      child: FAProgressBar(
+                        currentValue: progressValue,
+                        displayText: '%',
+                        size: 10.w,
+                        progressColor: AppConstants.mainOrange,
+                        backgroundColor: AppConstants.fillColorText,
+                      ),
+                    ),
+                  ),
+                  Padding(
+                    padding: EdgeInsets.only(top: 5.h, left: 3.w),
+                    child: Text(
+                      progressInfo,
+                      style: TextStyle(
+                        fontSize: 10.sp,
+                        color: AppConstants.mainBlack,
+                      ),
+                    ),
+                  )
+                ],
+              )
             ],
           ),
         ),

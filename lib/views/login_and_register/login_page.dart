@@ -96,17 +96,6 @@ class LoginPage extends StatelessWidget {
                 ),
               ),
             ),
-            /* SizedBox(
-              height: 50,
-              width: 150,
-              child: FAProgressBar(
-                currentValue: 25,
-                displayText: '%',
-                direction: Axis.vertical,
-                changeProgressColor: AppConstants.fillColorText,
-                animatedDuration: Duration(milliseconds: 500),
-              ),
-            ) */
           ],
         ),
       ),

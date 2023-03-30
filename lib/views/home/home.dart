@@ -1,5 +1,6 @@
 import 'package:solution_challenge_project/core/constants/font_constants.dart';
 import 'package:solution_challenge_project/export.dart';
+import 'package:solution_challenge_project/views/home/companents/campaigns_info.dart';
 import 'package:solution_challenge_project/views/home/companents/campaigns_inkwell.dart';
 import 'package:solution_challenge_project/views/home/companents/profile_hello.dart';
 import 'package:solution_challenge_project/views/home/companents/volunteers_inkwell.dart';
@@ -58,26 +59,59 @@ class HomePage extends StatelessWidget {
                 child: Row(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    const CampaignsInkwell(
-                      imageAdress: "assets/images/resim1.png",
-                      countryName: "Africa",
-                      navigationName: NavigationConstants.campaignsDetails1,
+                    Column(
+                      children: const [
+                        CampaignsInkwell(
+                          imageAdress: "assets/images/resim1.png",
+                          countryName: "Africa",
+                          navigationName: NavigationConstants.campaignsDetails1,
+                        ),
+                        CampaignsInfo(
+                          navigationInfoName:
+                              NavigationConstants.campaignsDetails1,
+                          progressValue: 60,
+                          progressInfo: "Raised",
+                        ),
+                      ],
                     ),
-                    Padding(
-                      padding: EdgeInsets.only(left: 15.w),
-                      child: const CampaignsInkwell(
-                        imageAdress: "assets/images/resim1.png",
-                        countryName: "India",
-                        navigationName: NavigationConstants.campaignsDetails1,
-                      ),
+                    SizedBox(
+                      width: 15.h,
                     ),
-                    Padding(
-                      padding: EdgeInsets.only(left: 15.w, right: 15.w),
-                      child: const CampaignsInkwell(
-                        imageAdress: "assets/images/resim1.png",
-                        countryName: "Africa",
-                        navigationName: NavigationConstants.campaignsDetails1,
-                      ),
+                    Column(
+                      children: const [
+                        CampaignsInkwell(
+                          imageAdress: "assets/images/resim1.png",
+                          countryName: "Africa",
+                          navigationName: NavigationConstants.campaignsDetails1,
+                        ),
+                        CampaignsInfo(
+                          navigationInfoName:
+                              NavigationConstants.campaignsDetails1,
+                          progressValue: 50,
+                          progressInfo: "Raised",
+                        ),
+                      ],
+                    ),
+                    SizedBox(
+                      width: 15.h,
+                    ),
+                    Column(
+                      children: const [
+                        CampaignsInkwell(
+                          imageAdress: "assets/images/resim1.png",
+                          countryName: "Africa",
+                          navigationName: NavigationConstants.campaignsDetails1,
+                        ),
+                        CampaignsInfo(
+                          navigationInfoName:
+                              NavigationConstants.campaignsDetails1,
+                          progressValue: 70,
+                          progressInfo: "Raised",
+                        ),
+                      ],
+                    ),
+                    SizedBox(
+                      width: 15.h,
                     ),
                   ],
                 ),
@@ -87,7 +121,7 @@ class HomePage extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Padding(
-                  padding: EdgeInsets.only(top: 35.h, left: 25.w),
+                  padding: EdgeInsets.only(top: 10.h, left: 25.w),
                   child: Text(
                     "Volunteers",
                     style: TextStyle(
@@ -99,7 +133,7 @@ class HomePage extends StatelessWidget {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsets.only(top: 35.h, left: 190.w),
+                  padding: EdgeInsets.only(top: 10.h, left: 190.w),
                   child: RichText(
                     text: TextSpan(
                       text: "View All",
@@ -116,7 +150,7 @@ class HomePage extends StatelessWidget {
               ],
             ),
             Padding(
-              padding: EdgeInsets.only(top: 15.h, left: 25.w),
+              padding: EdgeInsets.only(top: 10.h, left: 25.w),
               child: SingleChildScrollView(
                 scrollDirection: Axis.horizontal,
                 child: Row(
