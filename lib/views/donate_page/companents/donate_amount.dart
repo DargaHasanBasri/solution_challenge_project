@@ -1,10 +1,16 @@
+import 'package:flutter/services.dart';
 import 'package:solution_challenge_project/export.dart';
 
-class DonateAmount extends StatelessWidget {
+class DonateAmount extends StatefulWidget {
   const DonateAmount({
     super.key,
   });
 
+  @override
+  State<DonateAmount> createState() => _DonateAmountState();
+}
+
+class _DonateAmountState extends State<DonateAmount> {
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
@@ -37,7 +43,7 @@ class DonateAmount extends StatelessWidget {
                   Text(
                     "D",
                     style: TextStyle(
-                      fontSize: 70.sp,
+                      fontSize: 60.sp,
                       color: AppConstants.mainBlue,
                       fontFamily: FontConstants.playfairDisplaySemiBold,
                     ),
@@ -45,7 +51,7 @@ class DonateAmount extends StatelessWidget {
                   Text(
                     "O",
                     style: TextStyle(
-                      fontSize: 70.sp,
+                      fontSize: 60.sp,
                       color: AppConstants.mainBlue,
                       fontFamily: FontConstants.playfairDisplaySemiBold,
                     ),
@@ -53,7 +59,7 @@ class DonateAmount extends StatelessWidget {
                   Text(
                     "N",
                     style: TextStyle(
-                      fontSize: 70.sp,
+                      fontSize: 60.sp,
                       color: AppConstants.mainBlue,
                       fontFamily: FontConstants.playfairDisplaySemiBold,
                     ),
@@ -61,7 +67,7 @@ class DonateAmount extends StatelessWidget {
                   Text(
                     "A",
                     style: TextStyle(
-                      fontSize: 70.sp,
+                      fontSize: 60.sp,
                       color: AppConstants.mainBlue,
                       fontFamily: FontConstants.playfairDisplaySemiBold,
                     ),
@@ -69,7 +75,7 @@ class DonateAmount extends StatelessWidget {
                   Text(
                     "T",
                     style: TextStyle(
-                      fontSize: 70.sp,
+                      fontSize: 60.sp,
                       color: AppConstants.mainBlue,
                       fontFamily: FontConstants.playfairDisplaySemiBold,
                     ),
@@ -77,7 +83,7 @@ class DonateAmount extends StatelessWidget {
                   Text(
                     "E",
                     style: TextStyle(
-                      fontSize: 70.sp,
+                      fontSize: 60.sp,
                       color: AppConstants.mainBlue,
                       fontFamily: FontConstants.playfairDisplaySemiBold,
                     ),
@@ -95,20 +101,104 @@ class DonateAmount extends StatelessWidget {
                   child: InkWell(
                     onTap: () {
                       Get.defaultDialog(
-                        title: Text('payment_method'.tr).data!,
+
+
                         backgroundColor: AppConstants.mainBlue,
                         content: SizedBox(
+
+                        title: Text('New Card'.tr).data!,
+                        backgroundColor: AppConstants.mainWhite,
+                        content: Container(
+
                           width: 800.w,
                           height: 300.h,
                           child: Column(
                             children: [
-                              Wrap(
-                                spacing: 8,
-                                children: [
-                                  Chip(label: Text('cash'.tr)),
-                                  Chip(label: Text('card'.tr)),
-                                  Chip(label: Text('qr'.tr)),
+                              TextFormField(
+                                keyboardType: TextInputType.number,
+                                inputFormatters: [
+                                  FilteringTextInputFormatter.digitsOnly,
+                                  LengthLimitingTextInputFormatter(19),
+                                  CardNumberInputFormatter(),
                                 ],
+                                decoration: InputDecoration(
+                                  hintText: "Card Number",
+                                  prefixIcon: Padding(
+                                    padding:
+                                        EdgeInsets.symmetric(vertical: 10.h),
+                                    child: SizedBox(
+                                      height: 24.h,
+                                      width: 24.h,
+                                      child: Image.asset(
+                                          "assets/images/credit-card.png"),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                              Padding(
+                                padding: EdgeInsets.symmetric(vertical: 8.h),
+                                child: TextFormField(
+                                  decoration: InputDecoration(
+                                    hintText: "Full Name",
+                                    prefixIcon: Padding(
+                                      padding:
+                                          EdgeInsets.symmetric(vertical: 10.w),
+                                      child: SizedBox(
+                                        height: 24.h,
+                                        width: 24.h,
+                                        child: Image.asset(
+                                            "assets/images/user.png"),
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                              Row(
+                                children: [
+                                  Expanded(
+                                    child: TextFormField(
+                                      decoration: InputDecoration(
+                                        hintText: "CVV",
+                                        prefixIcon: Padding(
+                                          padding: EdgeInsets.symmetric(
+                                              vertical: 10.h),
+                                          child: SizedBox(
+                                            height: 24.h,
+                                            width: 24.h,
+                                            child: Image.asset(
+                                                "assets/images/cvv.png"),
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                  const SizedBox(
+                                    width: 15,
+                                  ),
+                                  Expanded(
+                                    child: TextFormField(
+                                      decoration: InputDecoration(
+                                        hintText: "MM/YY",
+                                        prefixIcon: Padding(
+                                          padding: EdgeInsets.symmetric(
+                                              vertical: 10.h),
+                                          child: SizedBox(
+                                            height: 24.h,
+                                            width: 24.h,
+                                            child: Image.asset(
+                                                "assets/images/calendar.png"),
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                              Padding(
+                                padding: EdgeInsets.all(10.w),
+                                child: const ActionButton(
+                                  buttonTitle: "Add Card",
+                                ),
                               ),
                             ],
                           ),
@@ -137,5 +227,33 @@ class DonateAmount extends StatelessWidget {
         ),
       ),
     );
+  }
+}
+
+class CardNumberInputFormatter extends TextInputFormatter {
+  @override
+  TextEditingValue formatEditUpdate(
+      TextEditingValue oldValue, TextEditingValue newValue) {
+    if (newValue.selection.baseOffset == 0) {
+      return newValue;
+    }
+
+    String inputData = newValue.text;
+    StringBuffer buffer = StringBuffer();
+
+    for (var i = 0; i < inputData.length; i++) {
+      buffer.write(inputData[i]);
+      int index = i + 1;
+
+      if (index % 4 == 0 && inputData.length != index) {
+        buffer.write(" ");
+      }
+    }
+
+    return TextEditingValue(
+        text: buffer.toString(),
+        selection: TextSelection.collapsed(
+          offset: buffer.toString().length,
+        ));
   }
 }
