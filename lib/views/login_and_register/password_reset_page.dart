@@ -31,7 +31,7 @@ class PasswordReset extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Padding(
-            padding: EdgeInsets.only(left: 37.w),
+            padding: EdgeInsets.only(left: 37.w, right: 37.w),
             child: Text.rich(
               TextSpan(
                 text: "I think you forgot your password! Please enter the  ",
@@ -105,6 +105,19 @@ class PasswordReset extends StatelessWidget {
                 ),
               ),
             ],
+          ),
+          Padding(
+            padding: EdgeInsets.symmetric(
+              vertical: 100.w,
+              horizontal: 120.h,
+            ),
+            child: SizedBox(
+              width: 200.w,
+              height: 190.h,
+              child: Image.asset(
+                'assets/images/logo.png',
+              ),
+            ),
           )
         ],
       ),
