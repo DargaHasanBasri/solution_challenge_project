@@ -8,6 +8,8 @@ class CampaignsInfo extends StatelessWidget {
   final String profileAdress1;
   final String profileAdress2;
   final String profileAdress3;
+  final String infoTitle;
+  final String peopleInfo;
   const CampaignsInfo({
     super.key,
     this.navigationInfoName,
@@ -16,6 +18,8 @@ class CampaignsInfo extends StatelessWidget {
     required this.profileAdress1,
     required this.profileAdress2,
     required this.profileAdress3,
+    required this.infoTitle,
+    required this.peopleInfo,
   });
 
   @override
@@ -23,7 +27,7 @@ class CampaignsInfo extends StatelessWidget {
     return Stack(
       children: [
         Ink(
-          width: 250.w,
+          width: 270.w,
           height: 145.h,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.only(
@@ -65,7 +69,7 @@ class CampaignsInfo extends StatelessWidget {
               Padding(
                 padding: EdgeInsets.only(left: 10.w),
                 child: Text(
-                  "6.258+ people Donate",
+                  "$peopleInfo people Donate",
                   style: TextStyle(
                     fontFamily: FontConstants.openSansBold,
                     fontSize: 12.sp,
@@ -84,18 +88,18 @@ class CampaignsInfo extends StatelessWidget {
               Row(
                 children: [
                   Text(
-                    "Donate for hungry people.",
+                    infoTitle,
                     style: TextStyle(
                       fontFamily: FontConstants.openSansMedium,
-                      fontSize: 15.sp,
+                      fontSize: 12.sp,
                       color: AppConstants.mainBlack,
                     ),
                   ),
                   Padding(
-                    padding: EdgeInsets.only(top: 5.h),
+                    padding: EdgeInsets.only(top: 3.h),
                     child: RichText(
                       text: TextSpan(
-                        text: "Read More...",
+                        text: " Read More...",
                         style: TextStyle(
                           fontFamily: FontConstants.openSansMedium,
                           fontSize: 8.sp,
@@ -114,7 +118,7 @@ class CampaignsInfo extends StatelessWidget {
                   Padding(
                     padding: EdgeInsets.only(top: 15.h),
                     child: SizedBox(
-                      width: 240.h,
+                      width: 260.h,
                       child: FAProgressBar(
                         currentValue: progressValue,
                         displayText: '%',

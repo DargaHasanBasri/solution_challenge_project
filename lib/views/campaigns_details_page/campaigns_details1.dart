@@ -40,7 +40,7 @@ class CampaignsDetails1 extends StatelessWidget {
                     Padding(
                       padding: EdgeInsets.only(top: 215.h),
                       child: const CampaignsContent(
-                        contentTitle: "Feed Children in the china",
+                        contentTitle: "Donate for people with Hookworn Africa",
                       ),
                     ),
                     Padding(

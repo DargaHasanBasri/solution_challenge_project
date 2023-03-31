@@ -39,33 +39,37 @@ class ViewAllCampaigns extends StatelessWidget {
             ),
             const AllCampaignsInfo(
               navigationInfoName: NavigationConstants.campaignsDetails1,
+              infoTitle: "Donate for people with Hookworm",
             ),
             const AllCampaigns(
               imageAdress: "assets/images/post2.png",
-              countryName: "Africa",
+              countryName: "Portugal",
               navigationName: NavigationConstants.campaignsDetails1,
               profileAdress: "assets/images/profile2.png",
             ),
             const AllCampaignsInfo(
               navigationInfoName: NavigationConstants.campaignsDetails1,
+              infoTitle: "Donate for people with Cataract",
             ),
             const AllCampaigns(
               imageAdress: "assets/images/post3.png",
-              countryName: "Africa",
+              countryName: "Congo",
               navigationName: NavigationConstants.campaignsDetails1,
               profileAdress: "assets/images/profile3.png",
             ),
             const AllCampaignsInfo(
               navigationInfoName: NavigationConstants.campaignsDetails1,
+              infoTitle: "Donate for people with Cholera",
             ),
             const AllCampaigns(
               imageAdress: "assets/images/post4.png",
-              countryName: "Africa",
+              countryName: "India",
               navigationName: NavigationConstants.campaignsDetails1,
               profileAdress: "assets/images/profile5.png",
             ),
             const AllCampaignsInfo(
               navigationInfoName: NavigationConstants.campaignsDetails1,
+              infoTitle: "Donate for people with Tuberculosis",
             ),
             const AllCampaigns(
               imageAdress: "assets/images/post5.png",
@@ -75,33 +79,37 @@ class ViewAllCampaigns extends StatelessWidget {
             ),
             const AllCampaignsInfo(
               navigationInfoName: NavigationConstants.campaignsDetails1,
+              infoTitle: "Donate for people with Hookworm",
             ),
             const AllCampaigns(
               imageAdress: "assets/images/post6.png",
-              countryName: "Africa",
+              countryName: "Niger",
               navigationName: NavigationConstants.campaignsDetails1,
               profileAdress: "assets/images/profile1.png",
             ),
             const AllCampaignsInfo(
               navigationInfoName: NavigationConstants.campaignsDetails1,
+              infoTitle: "Donate for people with Tuberculosis",
             ),
             const AllCampaigns(
               imageAdress: "assets/images/post7.png",
-              countryName: "Africa",
+              countryName: "Portugal",
               navigationName: NavigationConstants.campaignsDetails1,
               profileAdress: "assets/images/profile3.png",
             ),
             const AllCampaignsInfo(
               navigationInfoName: NavigationConstants.campaignsDetails1,
+              infoTitle: "Donate for people with Cataract",
             ),
             const AllCampaigns(
               imageAdress: "assets/images/post8.png",
-              countryName: "Africa",
+              countryName: "Congo ",
               navigationName: NavigationConstants.campaignsDetails1,
               profileAdress: "assets/images/profile4.png",
             ),
             const AllCampaignsInfo(
               navigationInfoName: NavigationConstants.campaignsDetails1,
+              infoTitle: "Donate for people with Cholera",
             ),
             const AllCampaigns(
               imageAdress: "assets/images/post9.png",
@@ -111,15 +119,17 @@ class ViewAllCampaigns extends StatelessWidget {
             ),
             const AllCampaignsInfo(
               navigationInfoName: NavigationConstants.campaignsDetails1,
+              infoTitle: "Donate for people with Hookworm",
             ),
             const AllCampaigns(
               imageAdress: "assets/images/post10.png",
-              countryName: "Africa",
+              countryName: "Niger",
               navigationName: NavigationConstants.campaignsDetails1,
               profileAdress: "assets/images/profile6.png",
             ),
             const AllCampaignsInfo(
               navigationInfoName: NavigationConstants.campaignsDetails1,
+              infoTitle: "donate for people with Malaria",
             ),
           ],
         ),

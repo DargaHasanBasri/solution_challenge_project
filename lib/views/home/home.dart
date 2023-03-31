@@ -77,6 +77,8 @@ class _HomePageState extends State<HomePage> {
                           profileAdress1: "assets/images/profile1.png",
                           profileAdress2: "assets/images/profile3.png",
                           profileAdress3: "assets/images/profile7.png",
+                          infoTitle: "Donate for people with Hookworm",
+                          peopleInfo: "10.203",
                         ),
                       ],
                     ),
@@ -85,7 +87,7 @@ class _HomePageState extends State<HomePage> {
                       children: const [
                         CampaignsInkwell(
                           imageAdress: "assets/images/post2.png",
-                          countryName: "Africa",
+                          countryName: "Portugal",
                           navigationName: NavigationConstants.campaignsDetails1,
                         ),
                         CampaignsInfo(
@@ -96,6 +98,8 @@ class _HomePageState extends State<HomePage> {
                           profileAdress1: "assets/images/profile6.png",
                           profileAdress2: "assets/images/profile1.png",
                           profileAdress3: "assets/images/profile5.png",
+                          infoTitle: "Donate for people with Cataract",
+                          peopleInfo: "7.563",
                         ),
                       ],
                     ),
@@ -104,17 +108,19 @@ class _HomePageState extends State<HomePage> {
                       children: const [
                         CampaignsInkwell(
                           imageAdress: "assets/images/post1.png",
-                          countryName: "Africa",
+                          countryName: "Congo",
                           navigationName: NavigationConstants.campaignsDetails1,
                         ),
                         CampaignsInfo(
                           navigationInfoName:
                               NavigationConstants.campaignsDetails1,
-                          progressValue: 70,
+                          progressValue: 40,
                           progressInfo: "Raised",
                           profileAdress1: "assets/images/profile1.png",
                           profileAdress2: "assets/images/profile3.png",
                           profileAdress3: "assets/images/profile6.png",
+                          infoTitle: "Donation for people with Cholera",
+                          peopleInfo: "5.232",
                         ),
                       ],
                     ),
@@ -123,17 +129,19 @@ class _HomePageState extends State<HomePage> {
                       children: const [
                         CampaignsInkwell(
                           imageAdress: "assets/images/post4.png",
-                          countryName: "Africa",
+                          countryName: "Indıa",
                           navigationName: NavigationConstants.campaignsDetails1,
                         ),
                         CampaignsInfo(
                           navigationInfoName:
                               NavigationConstants.campaignsDetails1,
-                          progressValue: 70,
+                          progressValue: 85,
                           progressInfo: "Raised",
                           profileAdress1: "assets/images/profile1.png",
                           profileAdress2: "assets/images/profile3.png",
                           profileAdress3: "assets/images/profile6.png",
+                          infoTitle: "Donate for people with Tuberculosis",
+                          peopleInfo: "12.323",
                         ),
                       ],
                     ),
@@ -142,17 +150,19 @@ class _HomePageState extends State<HomePage> {
                       children: const [
                         CampaignsInkwell(
                           imageAdress: "assets/images/post7.png",
-                          countryName: "Africa",
+                          countryName: "Niger",
                           navigationName: NavigationConstants.campaignsDetails1,
                         ),
                         CampaignsInfo(
                           navigationInfoName:
                               NavigationConstants.campaignsDetails1,
-                          progressValue: 70,
+                          progressValue: 90,
                           progressInfo: "Raised",
                           profileAdress1: "assets/images/profile1.png",
                           profileAdress2: "assets/images/profile3.png",
                           profileAdress3: "assets/images/profile6.png",
+                          infoTitle: "Donate for people with Malaria",
+                          peopleInfo: "20.213",
                         ),
                       ],
                     ),

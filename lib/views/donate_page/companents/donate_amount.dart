@@ -101,9 +101,15 @@ class _DonateAmountState extends State<DonateAmount> {
                   child: InkWell(
                     onTap: () {
                       Get.defaultDialog(
+
+
+                        backgroundColor: AppConstants.mainBlue,
+                        content: SizedBox(
+
                         title: Text('New Card'.tr).data!,
                         backgroundColor: AppConstants.mainWhite,
                         content: Container(
+
                           width: 800.w,
                           height: 300.h,
                           child: Column(

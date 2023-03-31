@@ -75,7 +75,9 @@ class AllCampaigns extends StatelessWidget {
                 borderRadius: BorderRadius.circular(5.r),
                 child: Material(
                   child: InkWell(
-                    onTap: () {},
+                    onTap: () {
+                      Get.toNamed(NavigationConstants.googleMaps);
+                    },
                     child: Ink(
                       width: 80.w,
                       height: 30.h,
