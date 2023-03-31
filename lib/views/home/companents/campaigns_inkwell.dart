@@ -27,7 +27,7 @@ class CampaignsInkwell extends StatelessWidget {
                 child: InkWell(
                   onTap: () => Get.toNamed(navigationName),
                   child: Ink(
-                    width: 250.w,
+                    width: 270.w,
                     height: 125.h,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.only(

@@ -97,7 +97,7 @@ class DonateAmount extends StatelessWidget {
                       Get.defaultDialog(
                         title: Text('payment_method'.tr).data!,
                         backgroundColor: AppConstants.mainBlue,
-                        content: Container(
+                        content: SizedBox(
                           width: 800.w,
                           height: 300.h,
                           child: Column(

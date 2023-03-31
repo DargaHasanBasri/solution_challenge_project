@@ -3,9 +3,11 @@ import 'package:solution_challenge_project/views/companents/profile.dart';
 
 class AllCampaignsInfo extends StatelessWidget {
   final dynamic navigationInfoName;
+  final String infoTitle;
   const AllCampaignsInfo({
     super.key,
     this.navigationInfoName,
+    required this.infoTitle,
   });
 
   @override
@@ -62,7 +64,7 @@ class AllCampaignsInfo extends StatelessWidget {
               Row(
                 children: [
                   Text(
-                    "Donate for hungry people.",
+                    infoTitle,
                     style: TextStyle(
                       fontFamily: FontConstants.openSansMedium,
                       fontSize: 16.sp,

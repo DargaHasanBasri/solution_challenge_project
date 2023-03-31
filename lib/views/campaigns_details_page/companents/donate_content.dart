@@ -20,9 +20,9 @@ class DonateContent extends StatelessWidget {
       child: Padding(
         padding: EdgeInsets.only(top: 150.h, left: 15.w, right: 15.w),
         child: Text(
-          "Cholera is usually transmitted to the body through seafood, food, and drinking water contaminated with the bacteria. It can easily spread in crowded environments and lead to deaths in communities affected by war, poverty, and poor sanitation practices."
-          "The World Health Organization reports between 1.3 million and 4 million cases each year. It is generally found in some provinces of Africa, South Asia, and Latin America."
-          "Treatment for the disease involves the use of serum and various antibiotics",
+          "Hookworm disease is a deadly problem that has been affecting the population of Africa for years,"
+          "and urgent health measures need to be taken for its treatment. Although the increase of hookworm disease "
+          "over time has been prevented, experts say there is a possibility of its resurgence.",
           style: TextStyle(
             fontFamily: FontConstants.openSansMedium,
             fontSize: 12.sp,

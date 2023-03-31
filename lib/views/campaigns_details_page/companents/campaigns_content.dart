@@ -27,7 +27,6 @@ class CampaignsContent extends StatelessWidget {
                 fontFamily: FontConstants.openSansMedium,
                 fontSize: 18.sp,
                 color: AppConstants.mainWhite,
-                fontWeight: FontWeight.bold,
               ),
             ),
           ),
@@ -66,17 +65,6 @@ class CampaignsContent extends StatelessWidget {
             )
           ],
         ),
-        /* Padding(
-          padding: EdgeInsets.only(top: 130.h),
-          child: const DonateContent(),
-        ),
-        Align(
-          alignment: Alignment.center,
-          child: Padding(
-            padding: EdgeInsets.only(top: 95.h),
-            child: const DonateInfo(),
-          ),
-        ) */
       ],
     );
   }
