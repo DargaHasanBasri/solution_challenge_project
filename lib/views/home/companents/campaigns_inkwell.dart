@@ -1,4 +1,5 @@
 import 'package:solution_challenge_project/export.dart';
+import 'package:solution_challenge_project/views/google_maps/google_maps.dart';
 
 class CampaignsInkwell extends StatelessWidget {
   final String imageAdress;
@@ -49,7 +50,9 @@ class CampaignsInkwell extends StatelessWidget {
                 borderRadius: BorderRadius.circular(5.r),
                 child: Material(
                   child: InkWell(
-                    onTap: () {},
+                    onTap: () {
+                      Get.toNamed(NavigationConstants.googleMaps);
+                    },
                     child: Ink(
                       width: 80.w,
                       height: 30.h,

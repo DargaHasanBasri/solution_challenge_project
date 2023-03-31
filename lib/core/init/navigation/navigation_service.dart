@@ -1,6 +1,7 @@
 import 'package:solution_challenge_project/export.dart';
 import 'package:solution_challenge_project/views/campaigns_details_page/campaigns_details1.dart';
 import 'package:solution_challenge_project/views/donate_page/donate.dart';
+import 'package:solution_challenge_project/views/google_maps/google_maps.dart';
 
 import 'package:solution_challenge_project/views/inform_page/inform_page.dart';
 import 'package:solution_challenge_project/views/inform_page/inform_page_second.dart';
@@ -76,6 +77,10 @@ class NavigationService {
     GetPage(
       name: NavigationConstants.navbar,
       page: () => const NavBar(),
+    ),
+    GetPage(
+      name: NavigationConstants.googleMaps,
+      page: () => const GoogleMaps(),
     ),
   ];
 }
