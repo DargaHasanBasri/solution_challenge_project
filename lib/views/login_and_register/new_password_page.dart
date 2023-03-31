@@ -17,9 +17,9 @@ class NewPassword extends StatelessWidget {
         title: Padding(
           padding: EdgeInsets.only(top: 7.h),
           child: Text(
-            "Create New Password.",
+            "Create New Password",
             style: TextStyle(
-              fontFamily: FontConstants.openSansBold,
+              fontFamily: FontConstants.playfairDisplayRegular,
               fontSize: 18.sp,
               color: Colors.black,
               fontWeight: FontWeight.bold,
@@ -31,7 +31,7 @@ class NewPassword extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Padding(
-            padding: EdgeInsets.only(left: 37.h),
+            padding: EdgeInsets.only(left: 37.w, right: 37.w),
             child: Text(
               "It's time to reset your password now. You can reset your password by entering a password that complies with the rules and entering it again.",
               style: TextStyle(
@@ -57,6 +57,19 @@ class NewPassword extends StatelessWidget {
               navigationName: NavigationConstants.loginPage,
             ),
           ),
+          Padding(
+            padding: EdgeInsets.symmetric(
+              vertical: 100.w,
+              horizontal: 120.h,
+            ),
+            child: SizedBox(
+              width: 400.w,
+              height: 180.h,
+              child: Image.asset(
+                'assets/images/logo.png',
+              ),
+            ),
+          )
         ],
       ),
     );
