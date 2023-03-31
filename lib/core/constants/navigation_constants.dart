@@ -21,4 +21,6 @@ class NavigationConstants {
   static const profileScreen = "/profilescreen";
 
   static const navbar = "/navbar";
+
+  static const googleMaps = "/googleMaps";
 }
