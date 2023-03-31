@@ -97,6 +97,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
             Container(
               padding: EdgeInsets.only(right: 36.w, left: 36.w, bottom: 15.h),
               child: TextFormField(
+                obscureText: true,
                 decoration: InputDecoration(
                   border: OutlineInputBorder(
                       borderRadius: BorderRadius.circular(15),
