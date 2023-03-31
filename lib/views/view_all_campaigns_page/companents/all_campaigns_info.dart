@@ -1,4 +1,3 @@
-import 'package:solution_challenge_project/core/constants/font_constants.dart';
 import 'package:solution_challenge_project/export.dart';
 import 'package:solution_challenge_project/views/companents/profile.dart';
 
@@ -27,17 +26,17 @@ class AllCampaignsInfo extends StatelessWidget {
                   Padding(
                     padding: EdgeInsets.only(left: 10.w),
                     child: const Profile(
-                        profileAdress: "assets/images/resim1.png"),
+                        profileAdress: "assets/images/profile1.png"),
                   ),
                   Padding(
                     padding: EdgeInsets.only(left: 30.w),
                     child: const Profile(
-                        profileAdress: "assets/images/resim2.png"),
+                        profileAdress: "assets/images/profile2.png"),
                   ),
                   Padding(
                     padding: EdgeInsets.only(left: 50.w),
                     child: const Profile(
-                        profileAdress: "assets/images/resim3.png"),
+                        profileAdress: "assets/images/profile3.png"),
                   ),
                 ],
               ),

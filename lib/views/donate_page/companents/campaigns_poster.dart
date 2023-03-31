@@ -36,7 +36,7 @@ class CampaignPoster extends StatelessWidget {
                       child: Opacity(
                         opacity: 0.84,
                         child: Image.asset(
-                          "assets/images/resim4.png",
+                          "assets/images/post8.png",
                           fit: BoxFit.cover,
                         ),
                       ),

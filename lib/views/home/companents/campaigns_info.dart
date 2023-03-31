@@ -1,16 +1,21 @@
 import 'package:solution_challenge_project/export.dart';
-import 'package:solution_challenge_project/views/companents/profile.dart';
 import 'package:solution_challenge_project/views/companents/progress_bar.dart';
 
 class CampaignsInfo extends StatelessWidget {
   final dynamic navigationInfoName;
   final double progressValue;
   final String progressInfo;
+  final String profileAdress1;
+  final String profileAdress2;
+  final String profileAdress3;
   const CampaignsInfo({
     super.key,
     this.navigationInfoName,
     required this.progressValue,
     required this.progressInfo,
+    required this.profileAdress1,
+    required this.profileAdress2,
+    required this.profileAdress3,
   });
 
   @override
@@ -36,18 +41,24 @@ class CampaignsInfo extends StatelessWidget {
                 children: [
                   Padding(
                     padding: EdgeInsets.only(left: 10.w),
-                    child: const Profile(
-                        profileAdress: "assets/images/resim1.png"),
+                    child: CircleAvatar(
+                      radius: 20.r,
+                      backgroundImage: AssetImage(profileAdress1),
+                    ),
                   ),
                   Padding(
                     padding: EdgeInsets.only(left: 30.w),
-                    child: const Profile(
-                        profileAdress: "assets/images/resim2.png"),
+                    child: CircleAvatar(
+                      radius: 20.r,
+                      backgroundImage: AssetImage(profileAdress2),
+                    ),
                   ),
                   Padding(
                     padding: EdgeInsets.only(left: 50.w),
-                    child: const Profile(
-                        profileAdress: "assets/images/resim3.png"),
+                    child: CircleAvatar(
+                      radius: 20.r,
+                      backgroundImage: AssetImage(profileAdress3),
+                    ),
                   ),
                 ],
               ),

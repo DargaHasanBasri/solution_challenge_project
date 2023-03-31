@@ -10,7 +10,7 @@ class ProfileCampaigns extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        const Profile(profileAdress: "assets/images/resim1.png"),
+        const Profile(profileAdress: "assets/images/profile3.png"),
         Padding(
           padding: EdgeInsets.only(left: 10.w),
           child: Text(
