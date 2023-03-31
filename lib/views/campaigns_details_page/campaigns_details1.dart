@@ -22,7 +22,7 @@ class CampaignsDetails1 extends StatelessWidget {
                     width: 375.w,
                     height: 300.h,
                     child: Image.asset(
-                      "assets/images/resim1.png",
+                      "assets/images/post5.png",
                       fit: BoxFit.cover,
                     ),
                   ),

@@ -10,7 +10,7 @@ class ChoosePhoto extends StatefulWidget {
 }
 
 class _ChoosePhotoState extends State<ChoosePhoto> {
-  late File? _chooseFile = null;
+  late File? _chooseFile;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -21,7 +21,12 @@ class _ChoosePhotoState extends State<ChoosePhoto> {
             SizedBox(height: 50.h),
             Row(
               children: [
-                const ArrowLeft(),
+                IconButton(
+                  onPressed: () {
+                    _chooseFotoSee(context);
+                  },
+                  icon: const Icon(Icons.add_a_photo),
+                ),
                 Text(
                   "Share Post",
                   style: TextStyle(
@@ -74,7 +79,7 @@ class _ChoosePhotoState extends State<ChoosePhoto> {
                             },
                             icon: const Icon(Icons.add_a_photo),
                           ),
-                        )
+                        ),
                       ],
                     ),
                   ),
@@ -135,21 +140,25 @@ class _ChoosePhotoState extends State<ChoosePhoto> {
     Get.defaultDialog(
       radius: 10.r,
       title: "Lütfen Seçim Yapınız",
-      content: Column(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          ListTile(
-            title: Center(
-              child: Text(
-                "Galeriden Fotoğraf Seç",
-                style: TextStyle(fontSize: 18.sp),
+      content: SizedBox(
+        width: 400.w,
+        height: 100.h,
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            ListTile(
+              title: Center(
+                child: Text(
+                  "Galeriden Fotoğraf Seç",
+                  style: TextStyle(fontSize: 18.sp),
+                ),
               ),
+              onTap: () {
+                _chooseLoad(ImageSource.gallery);
+              },
             ),
-            onTap: () {
-              _chooseLoad(ImageSource.gallery);
-            },
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }

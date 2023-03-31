@@ -38,18 +38,18 @@ class CampaignsContent extends StatelessWidget {
               children: [
                 Padding(
                   padding: EdgeInsets.only(top: 40.h, left: 10.w),
-                  child:
-                      const Profile(profileAdress: "assets/images/resim1.png"),
+                  child: const Profile(
+                      profileAdress: "assets/images/profile5.png"),
                 ),
                 Padding(
                   padding: EdgeInsets.only(top: 40.h, left: 30.w),
-                  child:
-                      const Profile(profileAdress: "assets/images/resim2.png"),
+                  child: const Profile(
+                      profileAdress: "assets/images/profile3.png"),
                 ),
                 Padding(
                   padding: EdgeInsets.only(top: 40.h, left: 50.w),
-                  child:
-                      const Profile(profileAdress: "assets/images/resim3.png"),
+                  child: const Profile(
+                      profileAdress: "assets/images/profile7.png"),
                 ),
               ],
             ),

@@ -47,7 +47,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                             shape: BoxShape.circle,
                             image: const DecorationImage(
                               fit: BoxFit.cover,
-                              image: AssetImage("assets/images/resim1.png"),
+                              image: AssetImage("assets/images/profile1.png"),
                             ),
                           ),
                         ),

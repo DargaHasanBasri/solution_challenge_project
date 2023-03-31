@@ -65,7 +65,7 @@ class _HomePageState extends State<HomePage> {
                     Column(
                       children: const [
                         CampaignsInkwell(
-                          imageAdress: "assets/images/resim1.png",
+                          imageAdress: "assets/images/post5.png",
                           countryName: "Africa",
                           navigationName: NavigationConstants.campaignsDetails1,
                         ),
@@ -74,16 +74,17 @@ class _HomePageState extends State<HomePage> {
                               NavigationConstants.campaignsDetails1,
                           progressValue: 60,
                           progressInfo: "Raised",
+                          profileAdress1: "assets/images/profile1.png",
+                          profileAdress2: "assets/images/profile3.png",
+                          profileAdress3: "assets/images/profile7.png",
                         ),
                       ],
                     ),
-                    SizedBox(
-                      width: 15.h,
-                    ),
+                    SizedBox(width: 15.h),
                     Column(
                       children: const [
                         CampaignsInkwell(
-                          imageAdress: "assets/images/resim1.png",
+                          imageAdress: "assets/images/post2.png",
                           countryName: "Africa",
                           navigationName: NavigationConstants.campaignsDetails1,
                         ),
@@ -92,16 +93,17 @@ class _HomePageState extends State<HomePage> {
                               NavigationConstants.campaignsDetails1,
                           progressValue: 50,
                           progressInfo: "Raised",
+                          profileAdress1: "assets/images/profile6.png",
+                          profileAdress2: "assets/images/profile1.png",
+                          profileAdress3: "assets/images/profile5.png",
                         ),
                       ],
                     ),
-                    SizedBox(
-                      width: 15.h,
-                    ),
+                    SizedBox(width: 15.h),
                     Column(
                       children: const [
                         CampaignsInkwell(
-                          imageAdress: "assets/images/resim1.png",
+                          imageAdress: "assets/images/post1.png",
                           countryName: "Africa",
                           navigationName: NavigationConstants.campaignsDetails1,
                         ),
@@ -110,12 +112,51 @@ class _HomePageState extends State<HomePage> {
                               NavigationConstants.campaignsDetails1,
                           progressValue: 70,
                           progressInfo: "Raised",
+                          profileAdress1: "assets/images/profile1.png",
+                          profileAdress2: "assets/images/profile3.png",
+                          profileAdress3: "assets/images/profile6.png",
                         ),
                       ],
                     ),
-                    SizedBox(
-                      width: 15.h,
+                    SizedBox(width: 15.h),
+                    Column(
+                      children: const [
+                        CampaignsInkwell(
+                          imageAdress: "assets/images/post4.png",
+                          countryName: "Africa",
+                          navigationName: NavigationConstants.campaignsDetails1,
+                        ),
+                        CampaignsInfo(
+                          navigationInfoName:
+                              NavigationConstants.campaignsDetails1,
+                          progressValue: 70,
+                          progressInfo: "Raised",
+                          profileAdress1: "assets/images/profile1.png",
+                          profileAdress2: "assets/images/profile3.png",
+                          profileAdress3: "assets/images/profile6.png",
+                        ),
+                      ],
                     ),
+                    SizedBox(width: 15.h),
+                    Column(
+                      children: const [
+                        CampaignsInkwell(
+                          imageAdress: "assets/images/post7.png",
+                          countryName: "Africa",
+                          navigationName: NavigationConstants.campaignsDetails1,
+                        ),
+                        CampaignsInfo(
+                          navigationInfoName:
+                              NavigationConstants.campaignsDetails1,
+                          progressValue: 70,
+                          progressInfo: "Raised",
+                          profileAdress1: "assets/images/profile1.png",
+                          profileAdress2: "assets/images/profile3.png",
+                          profileAdress3: "assets/images/profile6.png",
+                        ),
+                      ],
+                    ),
+                    SizedBox(width: 15.h),
                   ],
                 ),
               ),
@@ -153,36 +194,36 @@ class _HomePageState extends State<HomePage> {
               ],
             ),
             Padding(
-              padding: EdgeInsets.only(top: 10.h, left: 25.w),
+              padding: EdgeInsets.only(top: 10.h, bottom: 10.h, left: 25.w),
               child: SingleChildScrollView(
                 scrollDirection: Axis.horizontal,
                 child: Row(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     const VolunteersInkwell(
-                        imageAdress: "assets/images/resim2.png"),
+                        imageAdress: "assets/images/profile1.png"),
                     Padding(
                       padding: EdgeInsets.only(left: 15.w),
                       child: const VolunteersInkwell(
-                        imageAdress: "assets/images/resim3.png",
+                        imageAdress: "assets/images/profile2.png",
                       ),
                     ),
                     Padding(
                       padding: EdgeInsets.only(left: 15.w),
                       child: const VolunteersInkwell(
-                        imageAdress: "assets/images/resim4.png",
+                        imageAdress: "assets/images/profile3.png",
                       ),
                     ),
                     Padding(
                       padding: EdgeInsets.only(left: 15.w),
                       child: const VolunteersInkwell(
-                        imageAdress: "assets/images/resim1.png",
+                        imageAdress: "assets/images/profile4.png",
                       ),
                     ),
                     Padding(
                       padding: EdgeInsets.only(left: 15.w, right: 15.w),
                       child: const VolunteersInkwell(
-                        imageAdress: "assets/images/resim2.png",
+                        imageAdress: "assets/images/profile2.png",
                       ),
                     ),
                   ],

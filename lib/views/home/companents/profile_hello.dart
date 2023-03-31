@@ -50,7 +50,7 @@ class ProfileHello extends StatelessWidget {
               padding: EdgeInsets.only(top: 100.h, left: 15.w),
               child: CircleAvatar(
                 radius: 25.r,
-                backgroundImage: const AssetImage("assets/images/resim1.png"),
+                backgroundImage: const AssetImage("assets/images/profile7.png"),
               ),
             ),
             Column(
