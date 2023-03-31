@@ -10,7 +10,7 @@ class ChoosePhoto extends StatefulWidget {
 }
 
 class _ChoosePhotoState extends State<ChoosePhoto> {
-  late File? _chooseFile;
+  late File? _chooseFile = null;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
