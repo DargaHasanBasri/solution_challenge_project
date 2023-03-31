@@ -21,6 +21,7 @@ class ImageAndTitle extends StatelessWidget {
         Text(
           imageTitle, //'Sufficient Resources Save Lives'
           style: TextStyle(
+            fontFamily: FontConstants.playfairDisplayRegular,
             fontSize: 24.sp,
             fontWeight: FontWeight.bold,
           ),

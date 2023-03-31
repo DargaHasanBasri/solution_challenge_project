@@ -24,7 +24,7 @@ class LoginPage extends StatelessWidget {
             Padding(
               padding: EdgeInsets.only(left: 130.w),
               child: Container(
-                width: 100.w,
+                width: 115.w,
                 height: 30.h,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10.r),
@@ -32,8 +32,9 @@ class LoginPage extends StatelessWidget {
                 ),
                 child: Center(
                   child: Text(
-                    "Kurum",
+                    "Organization",
                     style: TextStyle(
+                      fontFamily: FontConstants.playfairDisplayRegular,
                       fontSize: 18.sp,
                       color: AppConstants.mainWhite,
                     ),
@@ -55,7 +56,7 @@ class LoginPage extends StatelessWidget {
                 alignment: Alignment.centerRight,
                 child: RichText(
                   text: TextSpan(
-                    text: "Parolamı unuttum",
+                    text: "I forgot my password.",
                     style: TextStyle(
                       fontSize: 12.sp,
                       fontFamily: FontConstants.openSansBold,
@@ -82,7 +83,7 @@ class LoginPage extends StatelessWidget {
                 Padding(
                   padding: EdgeInsets.only(top: 10.h),
                   child: Text(
-                    "Bir hesabın yok mu?",
+                    "Don't you have an account?",
                     style: TextStyle(
                       fontFamily: FontConstants.openSansBold,
                       fontSize: 12.sp,
@@ -94,7 +95,7 @@ class LoginPage extends StatelessWidget {
                   padding: EdgeInsets.only(top: 9.h, left: 3.w),
                   child: RichText(
                     text: TextSpan(
-                      text: "Hemen Kaydol",
+                      text: "Sign up now.",
                       style: TextStyle(
                         fontFamily: FontConstants.openSansBold,
                         fontSize: 12.sp,

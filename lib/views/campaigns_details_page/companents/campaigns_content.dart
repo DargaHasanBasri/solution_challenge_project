@@ -24,6 +24,7 @@ class CampaignsContent extends StatelessWidget {
             child: Text(
               contentTitle,
               style: TextStyle(
+                fontFamily: FontConstants.openSansMedium,
                 fontSize: 18.sp,
                 color: AppConstants.mainWhite,
                 fontWeight: FontWeight.bold,

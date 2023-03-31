@@ -23,8 +23,8 @@ class InformPageSecond extends StatelessWidget {
                 'Overwhelming scientific evidence confirms the severe and lasting impact of AIDS on individuals and communities globally.',
                 textAlign: TextAlign.center,
                 style: TextStyle(
-                  fontSize: 14.sp,
-                  color: Colors.grey[600],
+                  fontSize: 15.sp,
+                  color: Colors.grey[500],
                   fontFamily: FontConstants.openSansMedium,
                 ),
               ),

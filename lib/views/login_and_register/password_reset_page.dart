@@ -17,8 +17,9 @@ class PasswordReset extends StatelessWidget {
         title: Padding(
           padding: EdgeInsets.only(top: 7.h),
           child: Text(
-            "Parola Sıfırlama",
+            "Password Reset",
             style: TextStyle(
+              fontFamily: FontConstants.playfairDisplaySemiBold,
               fontSize: 18.sp,
               color: Colors.black,
               fontWeight: FontWeight.bold,
@@ -33,23 +34,27 @@ class PasswordReset extends StatelessWidget {
             padding: EdgeInsets.only(left: 37.w),
             child: Text.rich(
               TextSpan(
-                text: "Sanırım parolanı unuttun! Lütfen hesabına ait\nolan ",
+                text: "I think you forgot your password! Please enter the  ",
                 style: TextStyle(
+                  fontFamily: FontConstants.openSansMedium,
                   color: AppConstants.mainBlue,
                   fontSize: 15.sp,
                 ),
                 children: <TextSpan>[
                   TextSpan(
-                    text: 'e-posta adresini gir',
+                    text: 'email address',
                     style: TextStyle(
-                      color: Colors.black,
+                      fontFamily: FontConstants.openSansMedium,
+                      color: AppConstants.mainBlack,
                       fontWeight: FontWeight.bold,
                       fontSize: 15.sp,
                     ),
                   ),
                   TextSpan(
-                    text: ' ve gelen doğrulama\nkodu ile parolanı sıfırla.',
+                    text:
+                        ' and reset your password with the verification code you receive.',
                     style: TextStyle(
+                      fontFamily: FontConstants.openSansMedium,
                       color: AppConstants.mainBlue,
                       fontSize: 15.sp,
                     ),
@@ -60,12 +65,12 @@ class PasswordReset extends StatelessWidget {
           ),
           Padding(
             padding: EdgeInsets.only(top: 20.h, left: 37.w),
-            child: const UserTextFormField(hintTextTitle: "E-posta adresi"),
+            child: const UserTextFormField(hintTextTitle: "Email address"),
           ),
           Padding(
             padding: EdgeInsets.only(top: 20.h, left: 37.w),
             child: const ActionButton(
-              buttonTitle: "Doğrulama Kodu Al",
+              buttonTitle: "Get Verification Code",
               navigationName: NavigationConstants.newPassword,
             ),
           ),
@@ -75,8 +80,9 @@ class PasswordReset extends StatelessWidget {
               Padding(
                 padding: EdgeInsets.only(top: 10.h),
                 child: Text(
-                  "Bir hesabın yok mu?",
+                  "Don't you have an account?",
                   style: TextStyle(
+                    fontFamily: FontConstants.openSansMedium,
                     fontSize: 12.sp,
                     color: AppConstants.mainBlue,
                   ),
@@ -86,7 +92,7 @@ class PasswordReset extends StatelessWidget {
                 padding: EdgeInsets.only(top: 9.h, left: 3.w),
                 child: RichText(
                   text: TextSpan(
-                    text: "Hemen Kaydol",
+                    text: "Sign up now",
                     style: TextStyle(
                       fontSize: 12.sp,
                       decoration: TextDecoration.underline,

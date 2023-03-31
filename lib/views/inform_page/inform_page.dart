@@ -25,8 +25,8 @@ class InformPage extends StatelessWidget {
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     fontFamily: FontConstants.openSansMedium,
-                    fontSize: 16.sp,
-                    color: Colors.grey[600],
+                    fontSize: 15.sp,
+                    color: Colors.grey[500],
                   ),
                 ),
               ),

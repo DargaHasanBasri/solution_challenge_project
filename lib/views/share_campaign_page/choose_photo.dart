@@ -23,8 +23,9 @@ class _ChoosePhotoState extends State<ChoosePhoto> {
               children: [
                 const ArrowLeft(),
                 Text(
-                  "Post Paylaşımı",
+                  "Share Post",
                   style: TextStyle(
+                    fontFamily: FontConstants.playfairDisplayMedium,
                     fontSize: 20.sp,
                     color: AppConstants.mainBlack,
                   ),
@@ -115,7 +116,9 @@ class _ChoosePhotoState extends State<ChoosePhoto> {
                       ),
                       child: Text(
                         "Submit",
-                        style: TextStyle(fontSize: 22.sp),
+                        style: TextStyle(
+                            fontSize: 22.sp,
+                            fontFamily: FontConstants.openSansMedium),
                       ),
                     ),
                   ),
