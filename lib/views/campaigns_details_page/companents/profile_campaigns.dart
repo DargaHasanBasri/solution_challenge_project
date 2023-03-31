@@ -14,7 +14,7 @@ class ProfileCampaigns extends StatelessWidget {
         Padding(
           padding: EdgeInsets.only(left: 10.w),
           child: Text(
-            "By MSK Organigation",
+            "By HelpMed Organigation",
             style: TextStyle(
               fontFamily: FontConstants.playfairDisplayMedium,
               fontSize: 16.sp,

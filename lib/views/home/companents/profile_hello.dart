@@ -71,7 +71,7 @@ class ProfileHello extends StatelessWidget {
                 Padding(
                   padding: EdgeInsets.only(left: 8.w),
                   child: Text(
-                    "Mr. MK Antohony",
+                    "Mr. Hasan Basri",
                     style: TextStyle(
                       fontFamily: FontConstants.openSansMedium,
                       fontSize: 14.sp,
