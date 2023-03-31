@@ -61,6 +61,7 @@ class CampaignsInkwell extends StatelessWidget {
                         child: Text(
                           countryName,
                           style: TextStyle(
+                            fontFamily: FontConstants.openSansMedium,
                             fontSize: 12.sp,
                             fontWeight: FontWeight.bold,
                             color: AppConstants.mainWhite,

@@ -86,7 +86,8 @@ class CampaignsInfo extends StatelessWidget {
                       text: TextSpan(
                         text: "Read More...",
                         style: TextStyle(
-                          fontSize: 9.sp,
+                          fontFamily: FontConstants.openSansMedium,
+                          fontSize: 8.sp,
                           color: AppConstants.mainOrange,
                         ),
                         recognizer: TapGestureRecognizer()

@@ -26,7 +26,8 @@ class ActionButton extends StatelessWidget {
         ),
         child: Text(
           buttonTitle,
-          style: TextStyle(fontSize: 18.sp),
+          style: TextStyle(
+              fontSize: 18.sp, fontFamily: FontConstants.openSansMedium),
         ),
       ),
     );

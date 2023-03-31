@@ -28,6 +28,7 @@ class LoginPageLogo extends StatelessWidget {
                 child: Text(
                   "LOGIN",
                   style: TextStyle(
+                    fontFamily: FontConstants.playfairDisplayRegular,
                     fontSize: 100.sp,
                     color: AppConstants.mainWhite,
                   ),

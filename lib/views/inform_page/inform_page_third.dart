@@ -32,8 +32,8 @@ class InformPageThird extends StatelessWidget {
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     fontFamily: FontConstants.openSansMedium,
-                    fontSize: 16.sp,
-                    color: Colors.grey[600],
+                    fontSize: 15.sp,
+                    color: Colors.grey[500],
                   ),
                 ),
               ),
@@ -64,7 +64,8 @@ class InformPageThird extends StatelessWidget {
                               'Organization Login',
                               textAlign: TextAlign.center,
                               style: TextStyle(
-                                fontSize: 18.sp,
+                                fontFamily: FontConstants.openSansMedium,
+                                fontSize: 15.sp,
                                 color: AppConstants.mainWhite,
                               ),
                             ),
@@ -96,7 +97,8 @@ class InformPageThird extends StatelessWidget {
                               'Regular Login',
                               textAlign: TextAlign.center,
                               style: TextStyle(
-                                fontSize: 18.sp,
+                                fontFamily: FontConstants.openSansMedium,
+                                fontSize: 15.sp,
                                 color: AppConstants.mainWhite,
                               ),
                             ),

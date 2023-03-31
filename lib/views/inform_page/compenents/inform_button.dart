@@ -33,6 +33,7 @@ class InformButton extends StatelessWidget {
         child: Text(
           buttonTitle,
           style: TextStyle(
+            fontFamily: FontConstants.openSansMedium,
             fontSize: 18.sp,
             color: AppConstants.mainWhite,
           ),

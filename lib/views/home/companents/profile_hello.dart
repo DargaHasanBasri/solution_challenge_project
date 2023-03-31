@@ -73,6 +73,7 @@ class ProfileHello extends StatelessWidget {
                   child: Text(
                     "Mr. MK Antohony",
                     style: TextStyle(
+                      fontFamily: FontConstants.openSansMedium,
                       fontSize: 14.sp,
                       color: AppConstants.mainWhite,
                       fontWeight: FontWeight.bold,

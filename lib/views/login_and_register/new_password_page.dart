@@ -17,8 +17,9 @@ class NewPassword extends StatelessWidget {
         title: Padding(
           padding: EdgeInsets.only(top: 7.h),
           child: Text(
-            "Yeni Parola Oluştur",
+            "Create New Password.",
             style: TextStyle(
+              fontFamily: FontConstants.openSansBold,
               fontSize: 18.sp,
               color: Colors.black,
               fontWeight: FontWeight.bold,
@@ -32,8 +33,9 @@ class NewPassword extends StatelessWidget {
           Padding(
             padding: EdgeInsets.only(left: 37.h),
             child: Text(
-              "Şimdi parolayı sıfırlama zamanı. Kurallara\nuygun bir parola ve tekrarını girerek parolanı sıfırlayabilirsin.",
+              "It's time to reset your password now. You can reset your password by entering a password that complies with the rules and entering it again.",
               style: TextStyle(
+                fontFamily: FontConstants.openSansBold,
                 fontSize: 14.sp,
                 color: AppConstants.mainBlue,
               ),
@@ -41,16 +43,17 @@ class NewPassword extends StatelessWidget {
           ),
           Padding(
             padding: EdgeInsets.only(top: 10.h, left: 37.w),
-            child: const UserTextFormField(hintTextTitle: "Yeni Parola"),
+            child: const UserTextFormField(hintTextTitle: "New Password"),
           ),
           Padding(
             padding: EdgeInsets.only(top: 10.h, left: 37.w),
-            child: const UserTextFormField(hintTextTitle: "Parola Tekrarı"),
+            child:
+                const UserTextFormField(hintTextTitle: "Password Confirmation"),
           ),
           Padding(
             padding: EdgeInsets.only(top: 10.h, left: 37.w),
             child: const ActionButton(
-              buttonTitle: "Parolayı Kaydet",
+              buttonTitle: "Save Password",
               navigationName: NavigationConstants.loginPage,
             ),
           ),
