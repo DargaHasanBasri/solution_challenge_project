@@ -18,7 +18,7 @@ class DonateContent extends StatelessWidget {
         color: AppConstants.mainWhite,
       ),
       child: Padding(
-        padding: EdgeInsets.only(top: 150.h, left: 15.w, right: 15.w),
+        padding: EdgeInsets.only(top: 180.h, left: 25.w, right: 15.w),
         child: Text(
           "Hookworm disease is a deadly problem that has been affecting the population of Africa for years,"
           "and urgent health measures need to be taken for its treatment. Although the increase of hookworm disease "
