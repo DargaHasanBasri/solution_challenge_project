@@ -20,6 +20,10 @@ We can easily make donations according to the needs of the announcement we choos
 
 <img src="https://user-images.githubusercontent.com/79331212/229608717-10570c14-e339-4b04-9cb0-43d9623e2ca5.gif" width=25% height=30%>
 
+Thanks to the integration with Google Maps, we can view the help area up close.
+
+<img src="https://user-images.githubusercontent.com/79331212/229645136-482a8453-a6fb-43ca-91ee-fdf698c34206.gif" width=25% height=30%>
+
 If we have made an organization login, we can quickly raise funds by sharing posts for the needs of the help area.
 
 <img src="https://user-images.githubusercontent.com/79331212/229609161-4c67e9ac-faaa-4103-a1b8-a5435abeac0d.gif" width=25% height=30%>
