@@ -92,7 +92,7 @@ class _DonateAmountState extends State<DonateAmount> {
               ),
             ),
             Padding(
-              padding: EdgeInsets.only(top: 10.h),
+              padding: EdgeInsets.only(top: 160.h),
               child: ClipRRect(
                 borderRadius: BorderRadius.only(
                   topRight: Radius.circular(60.r),

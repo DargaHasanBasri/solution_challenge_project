@@ -63,110 +63,120 @@ class _HomePageState extends State<HomePage> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Column(
-                      children: const [
-                        CampaignsInkwell(
+                      children: [
+                        const CampaignsInkwell(
                           imageAdress: "assets/images/post5.png",
                           countryName: "Africa",
                           navigationName: NavigationConstants.campaignsDetails1,
                         ),
-                        CampaignsInfo(
-                          navigationInfoName:
-                              NavigationConstants.campaignsDetails1,
-                          progressValue: 60,
-                          progressInfo: "Raised",
-                          profileAdress1: "assets/images/profile1.png",
-                          profileAdress2: "assets/images/profile3.png",
-                          profileAdress3: "assets/images/profile7.png",
-                          infoTitle: "Donate for people with Hookworm",
-                          peopleInfo: "10.203",
+                        Padding(
+                          padding: EdgeInsets.only(left: 7.w),
+                          child: const CampaignsInfo(
+                            navigationInfoName:
+                                NavigationConstants.campaignsDetails1,
+                            progressValue: 60,
+                            progressInfo: "Raised",
+                            profileAdress1: "assets/images/profile1.png",
+                            profileAdress2: "assets/images/profile3.png",
+                            profileAdress3: "assets/images/profile7.png",
+                            infoTitle: "Donate for people with Hookworm",
+                            peopleInfo: "10.203+",
+                          ),
                         ),
                       ],
                     ),
-                    SizedBox(width: 15.h),
                     Column(
-                      children: const [
-                        CampaignsInkwell(
+                      children: [
+                        const CampaignsInkwell(
                           imageAdress: "assets/images/post2.png",
                           countryName: "Portugal",
                           navigationName: NavigationConstants.campaignsDetails1,
                         ),
-                        CampaignsInfo(
-                          navigationInfoName:
-                              NavigationConstants.campaignsDetails1,
-                          progressValue: 50,
-                          progressInfo: "Raised",
-                          profileAdress1: "assets/images/profile6.png",
-                          profileAdress2: "assets/images/profile1.png",
-                          profileAdress3: "assets/images/profile5.png",
-                          infoTitle: "Donate for people with Cataract",
-                          peopleInfo: "7.563",
+                        Padding(
+                          padding: EdgeInsets.only(left: 7.w),
+                          child: const CampaignsInfo(
+                            navigationInfoName:
+                                NavigationConstants.campaignsDetails1,
+                            progressValue: 50,
+                            progressInfo: "Raised",
+                            profileAdress1: "assets/images/profile6.png",
+                            profileAdress2: "assets/images/profile1.png",
+                            profileAdress3: "assets/images/profile5.png",
+                            infoTitle: "Donate for people with Cataract",
+                            peopleInfo: "7.563+",
+                          ),
                         ),
                       ],
                     ),
-                    SizedBox(width: 15.h),
                     Column(
-                      children: const [
-                        CampaignsInkwell(
+                      children: [
+                        const CampaignsInkwell(
                           imageAdress: "assets/images/post1.png",
                           countryName: "Congo",
                           navigationName: NavigationConstants.campaignsDetails1,
                         ),
-                        CampaignsInfo(
-                          navigationInfoName:
-                              NavigationConstants.campaignsDetails1,
-                          progressValue: 40,
-                          progressInfo: "Raised",
-                          profileAdress1: "assets/images/profile1.png",
-                          profileAdress2: "assets/images/profile3.png",
-                          profileAdress3: "assets/images/profile6.png",
-                          infoTitle: "Donation for people with Cholera",
-                          peopleInfo: "5.232",
+                        Padding(
+                          padding: EdgeInsets.only(left: 7.w),
+                          child: const CampaignsInfo(
+                            navigationInfoName:
+                                NavigationConstants.campaignsDetails1,
+                            progressValue: 40,
+                            progressInfo: "Raised",
+                            profileAdress1: "assets/images/profile1.png",
+                            profileAdress2: "assets/images/profile3.png",
+                            profileAdress3: "assets/images/profile6.png",
+                            infoTitle: "Donation for people with Cholera",
+                            peopleInfo: "5.232+",
+                          ),
                         ),
                       ],
                     ),
-                    SizedBox(width: 15.h),
                     Column(
-                      children: const [
-                        CampaignsInkwell(
+                      children: [
+                        const CampaignsInkwell(
                           imageAdress: "assets/images/post4.png",
                           countryName: "Indıa",
                           navigationName: NavigationConstants.campaignsDetails1,
                         ),
-                        CampaignsInfo(
-                          navigationInfoName:
-                              NavigationConstants.campaignsDetails1,
-                          progressValue: 85,
-                          progressInfo: "Raised",
-                          profileAdress1: "assets/images/profile1.png",
-                          profileAdress2: "assets/images/profile3.png",
-                          profileAdress3: "assets/images/profile6.png",
-                          infoTitle: "Donate for people with Tuberculosis",
-                          peopleInfo: "12.323",
+                        Padding(
+                          padding: EdgeInsets.only(left: 7.w),
+                          child: const CampaignsInfo(
+                            navigationInfoName:
+                                NavigationConstants.campaignsDetails1,
+                            progressValue: 85,
+                            progressInfo: "Raised",
+                            profileAdress1: "assets/images/profile1.png",
+                            profileAdress2: "assets/images/profile3.png",
+                            profileAdress3: "assets/images/profile6.png",
+                            infoTitle: "Donate for people with Tuberculosis",
+                            peopleInfo: "12.323+",
+                          ),
                         ),
                       ],
                     ),
-                    SizedBox(width: 15.h),
                     Column(
-                      children: const [
-                        CampaignsInkwell(
+                      children: [
+                        const CampaignsInkwell(
                           imageAdress: "assets/images/post7.png",
                           countryName: "Niger",
                           navigationName: NavigationConstants.campaignsDetails1,
                         ),
-                        CampaignsInfo(
-                          navigationInfoName:
-                              NavigationConstants.campaignsDetails1,
-                          progressValue: 90,
-                          progressInfo: "Raised",
-                          profileAdress1: "assets/images/profile1.png",
-                          profileAdress2: "assets/images/profile3.png",
-                          profileAdress3: "assets/images/profile6.png",
-                          infoTitle: "Donate for people with Malaria",
-                          peopleInfo: "20.213",
+                        Padding(
+                          padding: EdgeInsets.only(left: 7.w),
+                          child: const CampaignsInfo(
+                            navigationInfoName:
+                                NavigationConstants.campaignsDetails1,
+                            progressValue: 90,
+                            progressInfo: "Raised",
+                            profileAdress1: "assets/images/profile1.png",
+                            profileAdress2: "assets/images/profile3.png",
+                            profileAdress3: "assets/images/profile6.png",
+                            infoTitle: "Donate for people with Malaria",
+                            peopleInfo: "20.213+",
+                          ),
                         ),
                       ],
                     ),
-                    SizedBox(width: 15.h),
                   ],
                 ),
               ),
@@ -204,7 +214,7 @@ class _HomePageState extends State<HomePage> {
               ],
             ),
             Padding(
-              padding: EdgeInsets.only(top: 10.h, bottom: 10.h, left: 25.w),
+              padding: EdgeInsets.only(top: 10.h, bottom: 10.h, left: 40.w),
               child: SingleChildScrollView(
                 scrollDirection: Axis.horizontal,
                 child: Row(

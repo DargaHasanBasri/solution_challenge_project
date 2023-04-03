@@ -111,21 +111,6 @@ class LoginPage extends StatelessWidget {
                 ),
               ],
             ),
-            Align(
-              alignment: Alignment.center,
-              child: Padding(
-                padding: EdgeInsets.only(top: 30.h),
-                child: Text(
-                  "Or continue with",
-                  style: TextStyle(
-                    fontSize: 12.sp,
-                    fontFamily: FontConstants.openSansBold,
-                    color: AppConstants.mainOrange,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-              ),
-            ),
           ],
         ),
       ),

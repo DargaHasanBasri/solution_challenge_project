@@ -130,6 +130,13 @@ class _ChoosePhotoState extends State<ChoosePhoto> {
                 ],
               ),
             ),
+            SizedBox(
+              width: 400.w,
+              height: 250.h,
+              child: Image.asset(
+                'assets/images/logo.png',
+              ),
+            ),
           ],
         ),
       ),
@@ -139,7 +146,7 @@ class _ChoosePhotoState extends State<ChoosePhoto> {
   void _chooseFotoSee(BuildContext context) {
     Get.defaultDialog(
       radius: 10.r,
-      title: "Lütfen Seçim Yapınız",
+      title: "Choose I selection",
       content: SizedBox(
         width: 400.w,
         height: 100.h,
@@ -149,7 +156,7 @@ class _ChoosePhotoState extends State<ChoosePhoto> {
             ListTile(
               title: Center(
                 child: Text(
-                  "Galeriden Fotoğraf Seç",
+                  "Select a photo from gallery",
                   style: TextStyle(fontSize: 18.sp),
                 ),
               ),
