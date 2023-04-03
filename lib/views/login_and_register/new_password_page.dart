@@ -27,50 +27,52 @@ class NewPassword extends StatelessWidget {
           ),
         ),
       ),
-      body: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Padding(
-            padding: EdgeInsets.only(left: 37.w, right: 37.w),
-            child: Text(
-              "It's time to reset your password now. You can reset your password by entering a password that complies with the rules and entering it again.",
-              style: TextStyle(
-                fontFamily: FontConstants.openSansBold,
-                fontSize: 14.sp,
-                color: AppConstants.mainBlue,
+      body: SingleChildScrollView(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Padding(
+              padding: EdgeInsets.only(left: 37.w, right: 37.w),
+              child: Text(
+                "It's time to reset your password now. You can reset your password by entering a password that complies with the rules and entering it again.",
+                style: TextStyle(
+                  fontFamily: FontConstants.openSansBold,
+                  fontSize: 14.sp,
+                  color: AppConstants.mainBlue,
+                ),
               ),
             ),
-          ),
-          Padding(
-            padding: EdgeInsets.only(top: 10.h, left: 37.w),
-            child: const UserTextFormField(hintTextTitle: "New Password"),
-          ),
-          Padding(
-            padding: EdgeInsets.only(top: 10.h, left: 37.w),
-            child:
-                const UserTextFormField(hintTextTitle: "Password Confirmation"),
-          ),
-          Padding(
-            padding: EdgeInsets.only(top: 10.h, left: 37.w),
-            child: const ActionButton(
-              buttonTitle: "Save Password",
-              navigationName: NavigationConstants.loginPage,
+            Padding(
+              padding: EdgeInsets.only(top: 10.h, left: 37.w),
+              child: const UserTextFormField(hintTextTitle: "New Password"),
             ),
-          ),
-          Padding(
-            padding: EdgeInsets.symmetric(
-              vertical: 100.w,
-              horizontal: 120.h,
+            Padding(
+              padding: EdgeInsets.only(top: 10.h, left: 37.w),
+              child: const UserTextFormField(
+                  hintTextTitle: "Password Confirmation"),
             ),
-            child: SizedBox(
-              width: 400.w,
-              height: 180.h,
-              child: Image.asset(
-                'assets/images/logo.png',
+            Padding(
+              padding: EdgeInsets.only(top: 10.h, left: 37.w),
+              child: const ActionButton(
+                buttonTitle: "Save Password",
+                navigationName: NavigationConstants.loginPage,
               ),
             ),
-          )
-        ],
+            Padding(
+              padding: EdgeInsets.symmetric(
+                vertical: 100.w,
+                horizontal: 120.h,
+              ),
+              child: SizedBox(
+                width: 400.w,
+                height: 180.h,
+                child: Image.asset(
+                  'assets/images/logo.png',
+                ),
+              ),
+            )
+          ],
+        ),
       ),
     );
   }
